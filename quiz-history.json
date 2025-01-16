@@ -1,0 +1,333 @@
+[
+  {
+    "date": "2025-01-16T14:03:07.949Z",
+    "topic": "files/Test.json",
+    "totalQuestions": 2,
+    "score": 0.5,
+    "percentage": 25,
+    "correctAnswers": 0,
+    "partialAnswers": 1,
+    "timeSpent": 39,
+    "results": [
+      {
+        "question": {
+          "Question": "Which of the following Data Types are allowed in ABAP? (Choose two)",
+          "opt1": "DECFLOAT64",
+          "opt2": "DECFLOAT16",
+          "opt3": "DECFLOAT34",
+          "opt4": "DECFLOAT32",
+          "correctAns": [
+            "DECFLOAT16",
+            "DECFLOAT34"
+          ],
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": "",
+          "quizAns": [
+            "DECFLOAT64",
+            "DECFLOAT34"
+          ]
+        },
+        "userAnswers": [
+          "DECFLOAT64",
+          "DECFLOAT34"
+        ],
+        "isCorrect": false,
+        "partialScore": 0.5
+      },
+      {
+        "question": {
+          "Question": "Which of the following ABAP standard types are incomplete?",
+          "opt1": "F",
+          "opt2": "N",
+          "opt3": "X",
+          "opt4": "STRING",
+          "correctAns": "STRING",
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": ""
+        },
+        "userAnswers": [
+          "X"
+        ],
+        "isCorrect": false,
+        "partialScore": 0
+      }
+    ]
+  },
+  {
+    "date": "2025-01-16T13:56:06.155Z",
+    "topic": "files/Test.json",
+    "totalQuestions": 2,
+    "score": 0,
+    "percentage": 0,
+    "correctAnswers": 0,
+    "partialAnswers": 0,
+    "timeSpent": 21,
+    "results": [
+      {
+        "question": {
+          "Question": "We provide reference table and reference field to which type of fields?",
+          "opt1": "DECIMAL",
+          "opt2": "CURRENCY",
+          "opt3": "QUANTITY",
+          "correctAns": "DECIMAL",
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": "",
+          "quizAns": [
+            "CURRENCY"
+          ]
+        },
+        "userAnswers": [
+          "QUANTITY"
+        ],
+        "isCorrect": false,
+        "partialScore": 0
+      },
+      {
+        "question": {
+          "Question": "Can you create a table with fields not referring to data elements?",
+          "opt1": "Yes",
+          "opt2": "No",
+          "correctAns": "Yes",
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": ""
+        },
+        "userAnswers": [
+          "No"
+        ],
+        "isCorrect": false,
+        "partialScore": 0
+      }
+    ]
+  },
+  {
+    "date": "2025-01-16T12:45:48.500Z",
+    "topic": "files/SearchHelpQuestions.json",
+    "totalQuestions": 2,
+    "score": 0,
+    "percentage": 0,
+    "correctAnswers": 0,
+    "partialAnswers": 0,
+    "timeSpent": 1,
+    "results": [
+      {
+        "question": {
+          "Question": "Which data type has the default length of the blank default value?",
+          "opt1": "1",
+          "opt2": "N",
+          "opt3": "C",
+          "opt4": "D",
+          "correctAns": "C",
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": ""
+        },
+        "userAnswers": [],
+        "isCorrect": false,
+        "partialScore": 0
+      },
+      {
+        "question": {
+          "Question": "Which of the following predefined ABAP types is incomplete?",
+          "opt1": "F",
+          "opt2": "P",
+          "opt3": "XSTRING",
+          "opt4": "STRING",
+          "correctAns": "STRING",
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": "",
+          "quizAns": [
+            "XSTRING"
+          ]
+        },
+        "userAnswers": [],
+        "isCorrect": false,
+        "partialScore": 0
+      }
+    ]
+  },
+  {
+    "date": "2025-01-16T12:45:48.489Z",
+    "topic": "files/SearchHelpQuestions.json",
+    "totalQuestions": 2,
+    "score": 0,
+    "percentage": 0,
+    "correctAnswers": 0,
+    "partialAnswers": 0,
+    "timeSpent": 1,
+    "results": [
+      {
+        "question": {
+          "Question": "Which data type has the default length of the blank default value?",
+          "opt1": "1",
+          "opt2": "N",
+          "opt3": "C",
+          "opt4": "D",
+          "correctAns": "C",
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": ""
+        },
+        "userAnswers": [],
+        "isCorrect": false,
+        "partialScore": 0
+      },
+      {
+        "question": {
+          "Question": "Which of the following predefined ABAP types is incomplete?",
+          "opt1": "F",
+          "opt2": "P",
+          "opt3": "XSTRING",
+          "opt4": "STRING",
+          "correctAns": "STRING",
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": "",
+          "quizAns": [
+            "XSTRING"
+          ]
+        },
+        "userAnswers": [],
+        "isCorrect": false,
+        "partialScore": 0
+      }
+    ]
+  },
+  {
+    "date": "2025-01-16T12:39:05.823Z",
+    "topic": "files/Test.json",
+    "totalQuestions": 2,
+    "score": 1,
+    "percentage": 50,
+    "correctAnswers": 1,
+    "partialAnswers": 0,
+    "timeSpent": 51,
+    "results": [
+      {
+        "question": {
+          "Question": "What is the internal date format in SAP?",
+          "opt1": "YYYYMMDD",
+          "opt2": "DDMMYYYY",
+          "opt3": "MMDDYYYY",
+          "opt4": "YYYYDDMM",
+          "correctAns": "YYYYMMDD",
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": ""
+        },
+        "userAnswers": [
+          "YYYYMMDD"
+        ],
+        "isCorrect": true,
+        "partialScore": 1
+      },
+      {
+        "question": {
+          "Question": "Which are not predefined data types in ABAP?",
+          "opt1": "X",
+          "opt2": "P",
+          "opt3": "T",
+          "opt4": "W",
+          "correctAns": "T",
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": ""
+        },
+        "userAnswers": [
+          "W"
+        ],
+        "isCorrect": false,
+        "partialScore": 0
+      }
+    ]
+  },
+  {
+    "date": "2025-01-16T12:27:42.995Z",
+    "topic": "files/Test.json",
+    "totalQuestions": 1,
+    "score": 0.5,
+    "percentage": 50,
+    "correctAnswers": 0,
+    "partialAnswers": 1,
+    "timeSpent": 1,
+    "results": [
+      {
+        "question": {
+          "Question": "Which of the following Data Types are allowed in ABAP? (Choose two)",
+          "opt1": "DECFLOAT64",
+          "opt2": "DECFLOAT16",
+          "opt3": "DECFLOAT34",
+          "opt4": "DECFLOAT32",
+          "correctAns": [
+            "DECFLOAT16",
+            "DECFLOAT34"
+          ],
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": ""
+        },
+        "userAnswers": [
+          "DECFLOAT64",
+          "DECFLOAT34"
+        ],
+        "isCorrect": false,
+        "partialScore": 0.5
+      }
+    ]
+  },
+  {
+    "date": "2025-01-16T12:20:52.913Z",
+    "topic": "files/Test.json",
+    "totalQuestions": 3,
+    "score": 1,
+    "percentage": 33.33333333333333,
+    "correctAnswers": 1,
+    "partialAnswers": 0,
+    "timeSpent": 49,
+    "results": [
+      {
+        "question": {
+          "Question": "We provide reference table and reference field to which type of fields?",
+          "opt1": "DECIMAL",
+          "opt2": "CURRENCY",
+          "opt3": "QUANTITY",
+          "correctAns": "DECIMAL",
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": ""
+        },
+        "userAnswers": [
+          "CURRENCY"
+        ],
+        "isCorrect": false,
+        "partialScore": 0
+      },
+      {
+        "question": {
+          "Question": "Which among the following are valid predefined data types in ABAP?",
+          "opt1": "P",
+          "opt2": "X",
+          "opt3": "Decfloat16",
+          "opt4": "All of the above",
+          "correctAns": "All of the above",
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": ""
+        },
+        "userAnswers": [
+          "All of the above"
+        ],
+        "isCorrect": true,
+        "partialScore": 1
+      },
+      {
+        "question": {
+          "Question": "Which of the following predefined ABAP types is incomplete?",
+          "opt1": "F",
+          "opt2": "P",
+          "opt3": "XSTRING",
+          "opt4": "STRING",
+          "correctAns": "STRING",
+          "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+          "proposedAns": ""
+        },
+        "userAnswers": [
+          "XSTRING"
+        ],
+        "isCorrect": false,
+        "partialScore": 0
+      }
+    ]
+  }
+]

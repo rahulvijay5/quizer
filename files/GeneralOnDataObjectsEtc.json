@@ -1,0 +1,523 @@
+[
+  {
+    "Question": "Which of the following cannot be modified using the ABAP dictionary?",
+    "opt1": "TYPE GROUPS",
+    "opt2": "SEARCH HELP",
+    "opt3": "LOCK OBJECTS",
+    "opt4": "FUNCTION GROUPS",
+    "correctAns": "FUNCTION GROUPS",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Fields involved in foreign key relationship should share same data element and domain.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "False",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "We should assign a value to those fields if they DO NOT have a data dictionary reference to display column headings:",
+    "opt1": "SELTEXT",
+    "opt2": "REPTEXT",
+    "opt3": "COLTEXT",
+    "opt4": "All of the above",
+    "correctAns": "All of the above",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following does not physically exist in the underlying database? More than one answer is correct?",
+    "opt1": "View",
+    "opt2": "Internal Table",
+    "opt3": "Structure",
+    "opt4": "Transparent table",
+    "opt5": "Domain",
+    "correctAns": "View, Internal Table, Structure, Domain",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following are true?",
+    "opt1": "TABLE is used as a synonym for STANDARD TABLE",
+    "opt2": "You can only access a hashed table using the generic key operations. Explicit or implicit index operations (such as LOOP ... FROM oe INSERT itab within a LOOP) are not allowed.",
+    "opt3": "All hashed tables are index tables.",
+    "opt4": "We have to define the hash procedure explicitly for HASHED TABLE",
+    "correctAns": "All hashed tables are index tables.",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Can a transparent table exist in data dictionary but not in the database physically?",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "False",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "You cannot assign a local data object defined in a subroutine or function module to a field group.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What can you create using the ABAP Dictionary?",
+    "opt1": "Domains",
+    "opt2": "Type pools",
+    "opt3": "Transparent tables",
+    "opt4": "Field symbols",
+    "opt5": "Internal Tables",
+    "correctAns": "Domains, Type pools, Transparent tables",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "When should you use a hashed internal table?",
+    "opt1": "When accessing mainly single records",
+    "opt2": "When accessing by secondary key",
+    "opt3": "When accessing using the left-justified part of the key",
+    "opt4": "When accessing always by primary key",
+    "opt5": "When accessing by index",
+    "correctAns": "When accessing mainly single records",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What features are provided by the database interface? (Choose three)",
+    "opt1": "Database independence of application programs",
+    "opt2": "Conversion of Open SQL statements from ABAP statements into the corresponding database statements",
+    "opt3": "Syntax check of Native SQL commands",
+    "opt4": "Access to SAP table buffers",
+    "opt5": "Data consistency check using foreign key relationships",
+    "correctAns": "Database independence of application programs, Conversion of Open SQL statements from ABAP statements into the corresponding database statements, Data consistency check using foreign key relationships",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "For which of the following purposes can you use the ABAP dictionary?",
+    "opt1": "To create locks objects",
+    "opt2": "To activate the logging for transparent tables",
+    "opt3": "To maintain program translations",
+    "opt4": "To create development classes",
+    "correctAns": "To create locks objects, To create development classes",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following structures is created when you use a table type to define one of its components?",
+    "opt1": "Deep structure",
+    "opt2": "Nested structure",
+    "opt3": "Flat structure",
+    "opt4": "Append structure",
+    "correctAns": "Flat structure",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "You want to create a transparent table in the ABAP dictionary. When is the table physically created in the database?",
+    "opt1": "When you activate the table",
+    "opt2": "When you run the database utility transaction (SE14)",
+    "opt3": "When you insert the table name and select Create",
+    "opt4": "When you save the table",
+    "correctAns": "When you activate the table",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "When does SAP recommend that you use a hashed table?",
+    "opt1": "When a table must be sorted automatically by key in ascending order",
+    "opt2": "When a table is very large, and you want to access the table by key only",
+    "opt3": "When a table is very large, and you want to access the table by index only",
+    "opt4": "When a table must be accessible by both index and key",
+    "correctAns": "When a table is very large, and you want to access the table by key only",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What do global types and local types have in common?",
+    "opt1": "Documentation",
+    "opt2": "Field labels",
+    "opt3": "Search help",
+    "opt4": "Technical information",
+    "correctAns": "Documentation",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which action on the underlying dictionary object triggers a database table conversion?",
+    "opt1": "Reducing the size of a field",
+    "opt2": "Inserting an append structure",
+    "opt3": "Inserting a field of type reference",
+    "opt4": "Changing the order of non-key fields",
+    "correctAns": "Inserting an append structure",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which database objects can you create in the ABAP Dictionary?",
+    "opt1": "Projection views",
+    "opt2": "Logical databases",
+    "opt3": "Indexes",
+    "opt4": "Foreign key relationships",
+    "correctAns": "Indexes, Foreign key relationships",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Why ‘+’ sign is displayed instead of the field description while maintaining the table entries using TCODE – sm30?",
+    "opt1": "Short description is not provided for the field.",
+    "opt2": "Data element field label is not maintained",
+    "opt3": "Both a and b",
+    "opt4": "None of the above",
+    "correctAns": "Both a and b",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which is the transaction code that is used to access ABAP Dictionary?",
+    "opt1": "SE10",
+    "opt2": "SE38",
+    "opt3": "SE18",
+    "opt4": "SE11",
+    "correctAns": "SE11",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "A view is an ABAP Dictionary object.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Data elements and domains are used to describe the characteristics of fields. Is this a true or a false statement?",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "SAP stores both master data and transaction data in transparent tables.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "When the user hits the F4 key, both data element documentation and data element supplemental documentation is displayed.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "ABAP Dictionary objects are to be activated individually (immediately after each object is saved with the activation icon).",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "While defining Foreign Key Relationship, system suggests a Foreign Key relationship for you. Is this true or false?",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following statements are true for a Foreign Key Relationship? Choose all that apply.",
+    "opt1": "It can be defined between tables and must be explicitly defined at field level",
+    "opt2": "It is used to ensure the consistency of data",
+    "opt3": "While defining Foreign Key Relationship cardinality need not be specified",
+    "opt4": "None of the options are correct",
+    "correctAns": "It can be defined between tables and must be explicitly defined at field level, It is used to ensure the consistency of data",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What requirement exists if a field is defined in the dictionary of type CURR? Choose from the given options.",
+    "opt1": "The field must be numeric",
+    "opt2": "Decimals must be defined in the domain",
+    "opt3": "The field must be linked to another field of type CUKY",
+    "opt4": "No other requirement exists",
+    "correctAns": "Decimals must be defined in the domain",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is ABAP Dictionary?",
+    "opt1": "Enforces data integrity",
+    "opt2": "Manages data definitions without redundancy",
+    "opt3": "Is tightly integrated with the rest of the ABAP workbench",
+    "opt4": "All of the above",
+    "correctAns": "All of the above",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Identify the basic objects of the data dictionary.",
+    "opt1": "Domain",
+    "opt2": "Date element",
+    "opt3": "Tables",
+    "opt4": "All of the above",
+    "correctAns": "All of the above",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is true about a check table?",
+    "opt1": "Foreign key fields can accept only values which exist in the check table",
+    "opt2": "Check table fields can accept only values which exist in the check table",
+    "opt3": "Foreign key fields can accept any values regardless of the check table",
+    "opt4": "Check tables are not used for restricting values in the foreign key tables",
+    "correctAns": "Foreign key fields can accept only values which exist in the check table",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is needed to ensure a check field is verified against the referenced key field of the check table?",
+    "opt1": "Same data element is required for check field and referenced field",
+    "opt2": "Same domain is required for check field and referenced field",
+    "opt3": "Same data type only is required for check field and referenced field",
+    "opt4": "All key fields MUST have domain equality between check table and foreign key table",
+    "correctAns": "All key fields MUST have domain equality between check table and foreign key table",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which transaction code is used for deleting entire table contents?",
+    "opt1": "SE17",
+    "opt2": "SE30",
+    "opt3": "SE14",
+    "opt4": "SE09",
+    "correctAns": "SE14",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following are true?",
+    "opt1": "Pooled tables can be used to store control data like screen sequences, program parameters etc.",
+    "opt2": "Several cluster tables are stored in one corresponding table on the database.",
+    "opt3": "None of the above.",
+    "correctAns": "Pooled tables can be used to store control data like screen sequences, program parameters etc.",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "From the list below which is not a data class in the Dictionary?",
+    "opt1": "Master data",
+    "opt2": "Organizational data",
+    "opt3": "Project data",
+    "opt4": "System data",
+    "correctAns": "System data",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What tool can you call from the Repository Information System to search for Dictionary objects and their users?",
+    "opt1": "Data elements",
+    "opt2": "Where-used list",
+    "opt3": "Buffering type of tables",
+    "correctAns": "Where-used list",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is true about the primary index of a table? More than one answer is correct.",
+    "opt1": "The key fields of the table make up the primary index",
+    "opt2": "The primary index ID is designated by the Database Administrator",
+    "opt3": "The developer designates the fields to be used as the primary index",
+    "opt4": "The primary index is automatically created when the table is activated",
+    "correctAns": "The key fields of the table make up the primary index, The primary index is automatically created when the table is activated",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is a structured type in the ABAP dictionary that has no physical table definition in the underlying database referred to as?",
+    "opt1": "table",
+    "opt2": "structured data type",
+    "opt3": "structure",
+    "opt4": "table type",
+    "correctAns": "structure",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Identify the case where table buffering should be set off.",
+    "opt1": "When the most current data is required",
+    "opt2": "When the most current data is not required",
+    "opt3": "For Small Static non-volatile tables",
+    "opt4": "For Global Master Data",
+    "correctAns": "When the most current data is required",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "HIDE statement supports deep structures. State whether the statement is true or false.",
+    "opt1": "True",
+    "opt2": "False",
+    "opt3": "May be applicable",
+    "opt4": "Not applicable",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is Metadata?",
+    "opt1": "It is a data dictionary which is a centralized storage location for information about the data that is stored in a database",
+    "opt2": "It is a data dictionary which is a de-centralized storage location for information about the data that is stored in a database",
+    "opt3": "None of the options are correct",
+    "correctAns": "It is a data dictionary which is a centralized storage location for information about the data that is stored in a database",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which transaction type will be used to attach transaction code to the table maintenance generator? Choose the appropriate option.",
+    "opt1": "Dialog Transaction",
+    "opt2": "Report Transaction",
+    "opt3": "OO Transaction",
+    "opt4": "Parameter Transaction",
+    "correctAns": "Dialog Transaction",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Tables used to store the I-doc records are:",
+    "opt1": "EDIDC, EDIDE, EDIDF",
+    "opt2": "EDIDD, EDIDG, EDIDK",
+    "opt3": "EDIDC, EDIDD, EDIDS",
+    "opt4": "None of the options are correct",
+    "correctAns": "EDIDC, EDIDD, EDIDS",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "We can add custom fields to standard SAP tables using following ways. Choose all that apply.",
+    "opt1": "Directly Editing Table",
+    "opt2": "Using Customizing Includes",
+    "opt3": "Using Append Structures",
+    "opt4": "Using Substructures",
+    "correctAns": "Using Customizing Includes, Using Append Structures",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "The complete technical definition of a table field is determined by the field's:",
+    "opt1": "Domain",
+    "opt2": "Field name",
+    "opt3": "Data type",
+    "opt4": "Data element",
+    "correctAns": "Data element",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Variables in an ABAP code can be defined as being similar to data-dictionary elements, using:",
+    "opt1": "LIKE",
+    "opt2": "FOR",
+    "opt3": "TYPE",
+    "opt4": "None of the above",
+    "correctAns": "LIKE",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "VERSIONS of an object that can exist in the ABAP Dictionary are:",
+    "opt1": "Modifiable",
+    "opt2": "Active",
+    "opt3": "Inactive",
+    "opt4": "Revised",
+    "correctAns": "Active, Inactive, Revised",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which options exist for extending a table without having to modify a table within the ABAP Dictionary? More than one answer is correct.",
+    "opt1": "append fields to the table.",
+    "opt2": "use append structures.",
+    "opt3": "use customer includes.",
+    "opt4": "CI includes.",
+    "correctAns": "append fields to the table., use append structures., use customer includes.",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Where are Dictionary runtime objects used?",
+    "opt1": "in the dictionary",
+    "opt2": "in structures",
+    "opt3": "in table 'nametab'",
+    "opt4": "in work processes",
+    "correctAns": "",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What are the main functions of a Data Dictionary? More than one answer is correct.",
+    "opt1": "To insulate the ABAP/4 developer from the database",
+    "opt2": "To support the creation and management of metadata (data about data)",
+    "opt3": "To provide data security at the application level",
+    "opt4": "To connect to the operating system",
+    "correctAns": "To insulate the ABAP/4 developer from the database, To support the creation and management of metadata (data about data)",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Where does information come from when you press F1 on a screen field?",
+    "opt1": "Domain short text",
+    "opt2": "Search help",
+    "opt3": "Data element documentation",
+    "opt4": "Domain Help values",
+    "correctAns": "Data element documentation",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is the use of SPDD transaction?",
+    "opt1": "To adjust SAP custom object.",
+    "opt2": "To adjust SAP custom dictionary object.",
+    "opt3": "To adjust SAP standard repository object.",
+    "opt4": "To adjust SAP Standard dictionary object.",
+    "correctAns": "To adjust SAP Standard dictionary object.",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "To include a field on your screen that is not in the ABAP Dictionary, which include program should contain the data declaration for the field?",
+    "opt1": "PBO module include program",
+    "opt2": "TOP include program",
+    "opt3": "PAI module include program",
+    "opt4": "Subroutine include program",
+    "correctAns": "TOP include program",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Data of the basic list is available by default when secondary list is processed.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "The business (non-technical) definition of a table field is determined by the field's?",
+    "opt1": "domain",
+    "opt2": "field name",
+    "opt3": "data type",
+    "opt4": "data element",
+    "correctAns": "data element",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": ""
+  }
+]

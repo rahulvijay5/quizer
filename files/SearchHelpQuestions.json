@@ -1,0 +1,116 @@
+[
+  {
+    "Question": "Which components belong to an elementary search help? (Choose two)",
+    "opt1": "Fixed values",
+    "opt2": "Import / export parameters",
+    "opt3": "Selection method",
+    "opt4": "Attachment to a field",
+    "correctAns": [
+      "Fixed values",
+      "Selection method"
+    ],
+    "resource": "https://help.sap.com/viewer/cc88f18b833f4e1b9c5d7c63a0283e36/1909.000/en-US/0809a4e9b2ad47f39a1d0758c92f2677.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which must a search help do?",
+    "opt1": "Use a table or a view for data selection",
+    "opt2": "Determine the values for selection by the user",
+    "opt3": "Allow the user to select a response",
+    "opt4": "Have a dialog with the user",
+    "correctAns": [
+      "Allow the user to select a response"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Search help is assigned to which level of table?",
+    "opt1": "Field",
+    "opt2": "Domain",
+    "opt3": "Data element",
+    "opt4": "None of the above",
+    "correctAns": "Field",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following can you assign a search help to?",
+    "opt1": "Table",
+    "opt2": "Data element",
+    "opt3": "Domain",
+    "opt4": "Table Type",
+    "correctAns": [
+      "Data element",
+      "Structure component"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "We can assign search help to select option or parameter using?",
+    "opt1": "Match code object",
+    "opt2": "Batch code object",
+    "opt3": "User command",
+    "opt4": "None of the above",
+    "correctAns": "Match code object",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Search help cannot be attached to:",
+    "opt1": "Domain",
+    "opt2": "Field of a table",
+    "opt3": "Check table",
+    "opt4": "Table Type",
+    "correctAns": [
+      "Domain",
+      "Table Type"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What does not determine the behavior of the search help?",
+    "opt1": "User master record parameters",
+    "opt2": "Search help configuration",
+    "opt3": "Field attachment",
+    "opt4": "Selection method",
+    "correctAns": "User master record parameters",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What are types of search helps in data dictionary?",
+    "opt1": "Elementary",
+    "opt2": "Secondary",
+    "opt3": "Collection",
+    "opt4": "Collective",
+    "correctAns": [
+      "Elementary",
+      "Collective"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What must be assigned to search help parameters?",
+    "opt1": "Domain",
+    "opt2": "Data element",
+    "opt3": "Table",
+    "opt4": "Field",
+    "correctAns": "Data element",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is the recommended method to modify a standard search help to include customer defined search paths?",
+    "opt1": "Add an elementary search help to the standard search help",
+    "opt2": "Enhance the standard search help with an append search help",
+    "opt3": "Add a collective search help to the standard search help",
+    "opt4": "Perform a modification to the standard search help",
+    "correctAns": "Enhance the standard search help with an append search help",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  }
+]

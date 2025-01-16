@@ -1,0 +1,158 @@
+[
+    {
+      "Question": "Which of the following data types are predefined ABAP data types?",
+      "opt1": "DECFLOAT34",
+      "opt2": "String",
+      "opt3": "XString",
+      "opt4": "Float",
+      "opt5": "Decimals",
+      "correctAns": ["DECFLOAT34", "XString", "Float"],
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "What is the internal date format in SAP?",
+      "opt1": "YYYYMMDD",
+      "opt2": "DDMMYYYY",
+      "opt3": "MMDDYYYY",
+      "opt4": "YYYYDDMM",
+      "correctAns": "YYYYMMDD",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "What happens when the DELETE DATASET statement is used?",
+      "opt1": "A file is physically deleted",
+      "opt2": "A file is logically deleted",
+      "opt3": "Both A and B",
+      "opt4": "None of the above",
+      "correctAns": "A file is physically deleted",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Which data type has the default length of the blank default value?",
+      "opt1": "1",
+      "opt2": "N",
+      "opt3": "C",
+      "opt4": "D",
+      "correctAns": "C",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Which field should be a part of table for it to be client dependent?",
+      "opt1": "MATNR",
+      "opt2": "MANDT",
+      "opt3": "VBELN",
+      "opt4": "MBLNR",
+      "correctAns": "MANDT",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "The number of decimal places for output can be defined within a WRITE statement.",
+      "opt1": "True",
+      "opt2": "False",
+      "correctAns": "True",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Which among the following are valid predefined data types in ABAP?",
+      "opt1": "P",
+      "opt2": "X",
+      "opt3": "Decfloat16",
+      "opt4": "All of the above",
+      "correctAns": "All of the above",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Where are semantic characteristics of a field defined?",
+      "opt1": "Domain",
+      "opt2": "Data Element",
+      "opt3": "Reference Field",
+      "correctAns": "Data Element",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Can you create a table with fields not referring to data elements?",
+      "opt1": "Yes",
+      "opt2": "No",
+      "correctAns": "Yes",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Which of the following predefined ABAP types is incomplete?",
+      "opt1": "F",
+      "opt2": "P",
+      "opt3": "XSTRING",
+      "opt4": "STRING",
+      "correctAns": "STRING",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Data element is an example of",
+      "opt1": "Physical Definition",
+      "opt2": "Business Object",
+      "opt3": "Semantic Domain",
+      "opt4": "Technical Domain",
+      "correctAns": "Semantic Domain",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Which of the following ABAP standard types are incomplete?",
+      "opt1": "F",
+      "opt2": "N",
+      "opt3": "X",
+      "opt4": "STRING",
+      "correctAns": "STRING",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "You define a generic variable that can hold the ABAP types C, D, N, STRING, and T. You want to restrict the use of other ABAP types. Which generic data type must you use in the definition?",
+      "opt1": "CLIKE",
+      "opt2": "SIMPLE",
+      "opt3": "DATA",
+      "opt4": "CSEQUENCE",
+      "correctAns": "CLIKE",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Which of the following Data Types are allowed in ABAP? (Choose two)",
+      "opt1": "DECFLOAT64",
+      "opt2": "DECFLOAT16",
+      "opt3": "DECFLOAT34",
+      "opt4": "DECFLOAT32",
+      "correctAns": ["DECFLOAT16", "DECFLOAT34"],
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "We provide reference table and reference field to which type of fields?",
+      "opt1": "DECIMAL",
+      "opt2": "CURRENCY",
+      "opt3": "QUANTITY",
+      "correctAns": "DECIMAL",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Which are not predefined data types in ABAP?",
+      "opt1": "X",
+      "opt2": "P",
+      "opt3": "T",
+      "opt4": "W",
+      "correctAns": "T",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    }
+  ]
+  

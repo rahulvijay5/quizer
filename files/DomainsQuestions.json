@@ -1,0 +1,135 @@
+[
+    {
+      "Question": "Name of Type Group can contain a maximum of?",
+      "opt1": "10",
+      "opt2": "3",
+      "opt3": "5",
+      "opt4": "12",
+      "correctAns": "10",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Domain can be explicitly assigned to which of the following? Select all options that apply.",
+      "opt1": "FIXED VALUES",
+      "opt2": "VALUE TABLE",
+      "opt3": "VALUE FROM OTHER TRANSPARENT TABLES",
+      "opt4": "ALL OF THE ABOVE",
+      "correctAns": ["FIXED VALUES", "VALUE TABLE", "VALUE FROM OTHER TRANSPARENT TABLES"],
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Domain can be explicitly assigned fixed values.",
+      "opt1": "True",
+      "opt2": "False",
+      "correctAns": "True",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Which of the following ABAP dictionary types can you use to define domains?",
+      "opt1": "FLOAT",
+      "opt2": "CHAR",
+      "opt3": "DEC",
+      "opt4": "DATE",
+      "opt5": "NUMC",
+      "correctAns": ["FLOAT", "CHAR", "DEC", "DATE", "NUMC"],
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "To which ABAP Dictionary definition can you assign fixed values?",
+      "opt1": "Data element",
+      "opt2": "Field of a transparent table",
+      "opt3": "Component of a structure",
+      "opt4": "Domain",
+      "correctAns": ["Data element", "Domain"],
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "What is the basic object of a data Dictionary?",
+      "opt1": "Domains",
+      "opt2": "Documentation",
+      "opt3": "Data Models",
+      "correctAns": "Domains",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Compared to a predefined ABAP type, what additional properties can be assigned to a domain? (Choose three)",
+      "opt1": "Fixed values",
+      "opt2": "Conversion exits",
+      "opt3": "Value tables",
+      "opt4": "Parameter IDs",
+      "opt5": "Search helps",
+      "correctAns": ["Fixed values", "Conversion exits", "Value tables"],
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Value table can be assigned to.",
+      "opt1": "Domain",
+      "opt2": "Data element",
+      "opt3": "Fields",
+      "correctAns": "Domain",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Conversion routine is assigned to.",
+      "opt1": "Domain",
+      "opt2": "Data element",
+      "opt3": "Fields",
+      "correctAns": "Domain",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "What is the invalid attribute of a domain?",
+      "opt1": "Type",
+      "opt2": "Fixed Values",
+      "opt3": "Length",
+      "opt4": "Header",
+      "correctAns": "Header",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "You create a domain in the ABAP Dictionary. How can you use this domain?",
+      "opt1": "As the data type of a data element in the ABAP dictionary",
+      "opt2": "As the data type of an input field on a dialog screen",
+      "opt3": "As the data type of a selection screen field",
+      "opt4": "As the data type of a variable in an ABAP program",
+      "correctAns": ["As the data type of a data element in the ABAP dictionary", "As the data type of an input field on a dialog screen", "As the data type of a selection screen field", "As the data type of a variable in an ABAP program"],
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Which object would you integrate to determine the length of a field on a screen?",
+      "opt1": "Data element",
+      "opt2": "Domain",
+      "opt3": "Fields",
+      "correctAns": "Domain",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "We cannot create data element without creating the domain.",
+      "opt1": "True",
+      "opt2": "False",
+      "correctAns": "True",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Pre-defined domains exist in the system and are available for your use. Is this statement true or false?",
+      "opt1": "True",
+      "opt2": "False",
+      "correctAns": "True",
+      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+      "proposedAns": ""
+    }
+  ]
+  

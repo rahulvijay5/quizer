@@ -1,0 +1,119 @@
+[
+    {
+      "Question": "Which of the following views can be used to write on multiple tables?",
+      "opt1": "Database view",
+      "opt2": "Projection view",
+      "opt3": "Maintenance view",
+      "opt4": "Help view",
+      "correctAns": "Maintenance view",
+      "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "How many tables draw a projection view?",
+      "opt1": "1",
+      "opt2": "2",
+      "opt3": "3",
+      "correctAns": "1",
+      "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "What is true.",
+      "opt1": "A view contains data",
+      "opt2": "Views can be buffered",
+      "opt3": "Views cannot be buffered",
+      "opt4": "None of above",
+      "correctAns": "Views cannot be buffered",
+      "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "One of the disadvantages of CDS views is that it cannot be reused.",
+      "opt1": "True",
+      "opt2": "False",
+      "correctAns": "False",
+      "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Which of the following is a conditional expression in CDS view?",
+      "opt1": "CASE",
+      "opt2": "IF",
+      "opt3": "FOR",
+      "correctAns": "CASE",
+      "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Which view types can you use to join two tables with an outer join?",
+      "opt1": "Maintenance view",
+      "opt2": "Database view",
+      "opt3": "Projection view",
+      "opt4": "Help view",
+      "correctAns": "Maintenance view",
+      "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "You define a database view A and a maintenance view B in the ABAP dictionary. What restrictions apply to these views?",
+      "opt1": "Only B can have either a left outer join or an inner join.",
+      "opt2": "The tables joined in B must have foreign key relationships.",
+      "opt3": "Only A can be used in the FROM clause of a SELECT statement.",
+      "opt4": "The tables joined in A must have foreign key relationships",
+      "correctAns": "The tables joined in B must have foreign key relationships.",
+      "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "What type of ABAP Dictionary view is implemented as an “INNER JOIN”?",
+      "opt1": "Maintenance View",
+      "opt2": "Help View",
+      "opt3": "Database View",
+      "opt4": "Projection View",
+      "correctAns": "Database View",
+      "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "What does a view do?",
+      "opt1": "Contains other views",
+      "opt2": "Can be contained in a window",
+      "opt3": "Contains a view controller",
+      "opt4": "Contains windows",
+      "opt5": "If entered by an inbound plug, can cause an event handler method to be called",
+      "correctAns": "Contains other views",
+      "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "Difference between projection view and database view.",
+      "opt1": "Projection view can be created using one or more table and database view be created using single table",
+      "opt2": "Projection view be created using a single table and database view can be created using one or more table",
+      "opt3": "None of the above",
+      "correctAns": "Projection view be created using a single table and database view can be created using one or more table",
+      "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "What is true about views? More than one answer is correct.",
+      "opt1": "A view is automatically created on the database upon activation",
+      "opt2": "A view contains data",
+      "opt3": "Maintenance Views are not updateable",
+      "opt4": "Views can be buffered",
+      "correctAns": ["A view is automatically created on the database upon activation", "Maintenance Views are not updateable"],
+      "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+      "proposedAns": ""
+    },
+    {
+      "Question": "The ____ type of ABAP Dictionary view consists of one or more transparent tables and may be accessed by an ABAP program using Open SQL.",
+      "opt1": "Database view",
+      "opt2": "Projection view",
+      "opt3": "Help view",
+      "opt4": "Entity view",
+      "correctAns": "Database view",
+      "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+      "proposedAns": ""
+    }
+  ]
+  

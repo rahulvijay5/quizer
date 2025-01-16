@@ -1,0 +1,712 @@
+[
+  {
+    "Question": "What are the minimum number of primary indexes that can be created in SAP?",
+    "opt1": "1",
+    "opt2": "2",
+    "opt3": "3",
+    "opt4": "None of the above",
+    "correctAns": "1",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What are the maximum number of base tables that can be used in the project view in SAP?",
+    "opt1": "1",
+    "opt2": "2",
+    "opt3": "3",
+    "opt4": "4",
+    "correctAns": "4",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is the MAXIMUM number of secondary indexes that can be created?",
+    "opt1": "1",
+    "opt2": "2",
+    "opt3": "3",
+    "opt4": "None of the above",
+    "correctAns": "None of the above",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "When a table is locked in exclusive mode, another user requests for read",
+    "opt1": "Lock will be granted",
+    "opt2": "Lock will not be granted",
+    "opt3": "Lock will be generated in display mode",
+    "opt4": "None of the above",
+    "correctAns": "Lock will not be granted",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following best describes the data class application while creating a DDIC Table?",
+    "opt1": "Master data - data that is rarely changed",
+    "opt2": "Transaction data - data that is changed",
+    "opt3": "Organization data - customizing data changed only rarely",
+    "opt4": "None of the above",
+    "correctAns": "Master data - data that is rarely changed",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "When would you store a table as a row-based select all option that apply:",
+    "opt1": "When the number of records is huge",
+    "opt2": "When all columns of the tables are relevant",
+    "opt3": "When the table contains several repeated values",
+    "opt4": "When aggregation is not required",
+    "correctAns": "When aggregation is not required",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "How many append structures can be inserted in a table?",
+    "opt1": "1",
+    "opt2": "2",
+    "opt3": "3",
+    "opt4": "Any number of tables",
+    "correctAns": "Any number of tables",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is the maximum number of structures that can be included in table or structure?",
+    "opt1": "9",
+    "opt2": "8",
+    "opt3": "4",
+    "opt4": "7",
+    "correctAns": "9",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is the maximum number of tables joins that can be used in Hana?",
+    "opt1": "100",
+    "opt2": "150",
+    "opt3": "50",
+    "opt4": "25",
+    "correctAns": "100",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "“MANDT” field in table makes it",
+    "opt1": "Database dependent",
+    "opt2": "Client independent",
+    "opt3": "Client dependent",
+    "opt4": "Database independent",
+    "correctAns": "Client dependent",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "You are writing a transaction to update a database table. Which of the following elements must the program continue?",
+    "opt1": "A logical database",
+    "opt2": "A table buffers refresh on the application server",
+    "opt3": "A call for enqueue dequeue function module",
+    "opt4": "An authority check statement",
+    "correctAns": [
+      "A logical database",
+      "A call for enqueue dequeue function module",
+      "An authority check statement"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is the difference between inner join and left outer joins?",
+    "opt1": "Inner join - common entries",
+    "opt2": "Left outer join - all entries from left side DB table and corresponding entries in other side",
+    "opt3": "Inner join - all entries from both tables",
+    "opt4": "Left outer join - only matching entries from the left side",
+    "correctAns": [
+      "Inner join - common entries",
+      "Left outer join - all entries from left side DB table and corresponding entries in other side"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "When would you use a column store table instead of a row store table? Select option",
+    "opt1": "When you require aggregation and analysis of values",
+    "opt2": "When there are mainly distinct values in the table",
+    "opt3": "When you want to enable a full-text search of the table",
+    "opt4": "When the table has a small number of records",
+    "correctAns": [
+      "When you require aggregation and analysis of values",
+      "When there are mainly distinct values in the table"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What are the maximum number of fields that can be part of a key field?",
+    "opt1": "6",
+    "opt2": "9",
+    "opt3": "16",
+    "opt4": "19",
+    "correctAns": "16",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following are applicable for table buffering?",
+    "opt1": "The system loads all the records of the table into the buffer when one record is accessed.",
+    "opt2": "When a record of the table is accessed, all the records having this relevant field are loaded into the buffer.",
+    "opt3": "Only the records of a table that are really accessed are loaded.",
+    "opt4": "All of the above",
+    "correctAns": ["All of the above"],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which table is used to store the control records for IDOC?",
+    "opt1": "EDIDD",
+    "opt2": "EDIDC",
+    "opt3": "EDIDL",
+    "opt4": "EDIDS",
+    "correctAns": "EDIDC",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "In which of the following situations could a row store table be more suitable than a column store table?",
+    "opt1": "The table contains data that you want to aggregate.",
+    "opt2": "The table contains only a small number of records.",
+    "opt3": "The table contains mainly distinct values per column across rows.",
+    "opt4": "The table contains text that you want to search.",
+    "correctAns": [
+      "The table contains only a small number of records.",
+      "The table contains text that you want to search."
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Based on Primary and Secondary key, SAP automatically creates a primary index to improve performance for transparent tables.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following can be achieved using Technical Settings?",
+    "opt1": "Optimize storage space requirements",
+    "opt2": "Table access behavior",
+    "opt3": "Buffering required",
+    "opt4": "All of the above",
+    "correctAns": "All of the above",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following are valid join types?",
+    "opt1": "Self Join",
+    "opt2": "Inner Join",
+    "opt3": "Outer Join",
+    "opt4": "All of the above",
+    "correctAns": "All of the above",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following are ways in which Standard Tables can be enhanced? (OR) Which can you use to enhance SAP standard tables and structures with fields?",
+    "opt1": "Custom include",
+    "opt2": "Direct field addition",
+    "opt3": "Append structure",
+    "opt4": "None of the options are correct",
+    "correctAns": ["Custom include", "Append structure"],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "In which table is the status stored, when an IDOC is created?",
+    "opt1": "EDIDD (DATA RECORDS)",
+    "opt2": "EDIDC (control records)",
+    "opt3": "EDIDS (status records)",
+    "opt4": "EDIDE",
+    "correctAns": "EDIDS (status records)",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following are access strategies for tables?",
+    "opt1": "Index unique scan",
+    "opt2": "Concatenation",
+    "opt3": "Sort table scan",
+    "opt4": "Full table scan",
+    "correctAns": ["Index unique scan", "Concatenation", "Sort table scan"],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "How do you add fields to an SAP-delivered transparent table without modification?",
+    "opt1": "Use the database utility to enhance the definition on the database directly.",
+    "opt2": "Add the new fields to the table definition.",
+    "opt3": "Create an append structure containing the new fields.",
+    "opt4": "Define a structure containing the new fields and include it in the table definition.",
+    "correctAns": "Create an append structure containing the new fields.",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "When does SAP recommend that you use a full buffering type for a database table?",
+    "opt1": "When the table is very large and frequently written",
+    "opt2": "When the table is very small and frequently written",
+    "opt3": "When the table is very large and seldom written",
+    "opt4": "When the table is very small and seldom written",
+    "correctAns": "When the table is very small and seldom written",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following customer modification options are available in the table maintenance generator?",
+    "opt1": "Maintenance screens",
+    "opt2": "Events",
+    "opt3": "Search helps",
+    "opt4": "Append searches",
+    "correctAns": [
+      "Maintenance screens",
+      "Events",
+      "Search helps",
+      "Append searches"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "You want to add a field of type CURR to a transparent table. What else must you do?",
+    "opt1": "Create a new field CUKY as a predefined type",
+    "opt2": "Add a key field of type CUKY",
+    "opt3": "Create a reference to a field of type CUKY",
+    "opt4": "Add a check table that contains a field of type CUKY",
+    "correctAns": "Create a new field CUKY as a predefined type",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "In which database table type is there a one-to-one relationship between the Dictionary table definition and the relevant physical table in the database?",
+    "opt1": "Cluster table",
+    "opt2": "Pooled table",
+    "opt3": "Transparent table",
+    "opt4": "Internal table",
+    "correctAns": "Transparent table",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "You want to create a transparent table. Which of the following must you define to activate the table?",
+    "opt1": "A delivery class",
+    "opt2": "A foreign key",
+    "opt3": "The primary key",
+    "opt4": "The MANDT field",
+    "opt5": "A short description",
+    "correctAns": [
+      "A delivery class",
+      "The primary key",
+      "The MANDT field",
+      "A short description"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "You want to define a formal parameter to a subroutine that accepts only internal tables of types standard and type sorted as actual parameters. Which of the following generic ABAP data types must you use?",
+    "opt1": "Sorted table",
+    "opt2": "Standard table",
+    "opt3": "Index table",
+    "opt4": "Hashed table",
+    "correctAns": ["Standard table", "Sorted table"],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "In the technical settings for a transparent table, buffering is switched on and single record buffering is selected. Which statement uses the buffered data assuming that the WHERE clause contains restrictions for all key fields?",
+    "opt1": "SELECT ENDSELECT.",
+    "opt2": "SELECT SINGLE.",
+    "opt3": "SELECT … INTO TABLE.",
+    "opt4": "SELECT SINGLE FOR UPDATE.",
+    "correctAns": "SELECT SINGLE.",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following transaction can you use to define transparent tables?",
+    "opt1": "SE16N",
+    "opt2": "SE38",
+    "opt3": "SE11",
+    "opt4": "SM37",
+    "correctAns": "SE11",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following can you define in the technical settings of transparent table?",
+    "opt1": "Size category",
+    "opt2": "Table name",
+    "opt3": "Data class",
+    "opt4": "Buffering type",
+    "opt5": "Delivery class",
+    "correctAns": [
+      "Size category",
+      "Data class",
+      "Buffering type",
+      "Delivery class"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is the SAP recommended naming convention for append structures of standard SAP tables?",
+    "opt1": "The name of the append structure must start with Z OR Y.",
+    "opt2": "The components of an append structure should start with ZZ or YY.",
+    "opt3": "The components of an append structure should start with Z or Y.",
+    "opt4": "The name of the append structure must start with ZZ or YY.",
+    "correctAns": "The name of the append structure must start with Z OR Y.",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is required to fully specify a Table Type in the ABAP Dictionary?",
+    "opt1": "Access type",
+    "opt2": "Table key",
+    "opt3": "Table size",
+    "opt4": "Line type",
+    "opt5": "Header line",
+    "correctAns": ["Access type", "Table key", "Line type"],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Can we create transaction code for table maintenance?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "Yes",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Without maintaining the following, Table cannot be activated.",
+    "opt1": "Entry help/check",
+    "opt2": "Technical settings",
+    "opt3": "Primary key",
+    "correctAns": ["Technical settings", "Primary key"],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Text table should consist of.",
+    "opt1": "All the key fields of main table",
+    "opt2": "All the fields of main table",
+    "opt3": "SPRAS field for language key",
+    "correctAns": "SPRAS field for language key",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Can we include customizing include or append structure with pooled / cluster tables?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "No",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "We need to create primary index explicitly.",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "No",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Single record buffering should be used when",
+    "opt1": "It should be used for large tables when there are few records accesses",
+    "opt2": "It should be used in large table that have frequent access to records",
+    "opt3": "It should be used for those tables where some of the fields of the table are needed",
+    "opt4": "All of the above",
+    "correctAns": "It should be used for large tables when there are few records accesses",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Pre-requisite for creating foreign key relationship is?",
+    "opt1": "The domain of foreign key and primary key of the check table should be different.",
+    "opt2": "The foreign key field and primary key of check table should the same domain",
+    "opt3": "A value table to the domain must be assigned",
+    "correctAns": "The foreign key field and primary key of check table should the same domain",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Whenever we create and activate the table below index will get automatically created",
+    "opt1": "Secondary index",
+    "opt2": "Primary index",
+    "opt3": "Unique index",
+    "opt4": "None of the above",
+    "correctAns": "Primary index",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "When we create the table, text table will automatically get created",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "False",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "We can create table maintenance with below types of screens.",
+    "opt1": "Overview screen",
+    "opt2": "Single screen",
+    "opt3": "None of the above",
+    "correctAns": ["Overview screen", "Single screen"],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Among the below which is not the valid delivery class?",
+    "opt1": "A - application table (master & transaction data)",
+    "opt2": "C – customizing table",
+    "opt3": "T – temporary storage data",
+    "opt4": "S – system table",
+    "correctAns": "T – temporary storage data",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Transaction code for maintaining table/view (through TMG) is.",
+    "opt1": "Sm30",
+    "opt2": "Sm13",
+    "opt3": "Se30",
+    "opt4": "Sm35",
+    "correctAns": "Sm30",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "We have an option for events in table maintenance generator.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Can we create change document history (CDHDR / CDPOS entries) for custom tables?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "Yes",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What are the check tables and value tables?",
+    "opt1": "Check table will be at field level checking.",
+    "opt2": "Value table will be at domain level checking.",
+    "opt3": "Value table will be at field level checking.",
+    "opt4": "Check table will be at domain level checking.",
+    "correctAns": [
+      "Check table will be at field level checking.",
+      "Value table will be at domain level checking."
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "It is better to buffer a table when",
+    "opt1": "When a table is read infrequently",
+    "opt2": "When a table is linked to check tables",
+    "opt3": "When a table is read frequently, and the data seldom changes",
+    "opt4": "When a single record is to be picked up",
+    "correctAns": "When a table is read frequently, and the data seldom changes",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Full Buffering would be appropriate for",
+    "opt1": "Transaction Tables",
+    "opt2": "Small Static tables",
+    "opt3": "Internal Tables",
+    "opt4": "Tables with generic Keys",
+    "correctAns": "Small Static tables",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is the Cardinality for the Node created for storing the Table?",
+    "opt1": "1:1",
+    "opt2": "0:1",
+    "opt3": "n:n",
+    "opt4": "0:n",
+    "correctAns": "1:1",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Custom table names must begin with a Z and are restricted to 16 characters. Is this a true or a false statement?",
+    "opt1": "True",
+    "opt2": "False (It can start with Y also)",
+    "correctAns": "False (It can start with Y also)",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "The table that is referenced by the foreign key (in our example, YCUSTOMERS) is called the check table (table having primary key). State whether the statement is true or false.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "The check table is also known as:",
+    "opt1": "Dependent table",
+    "opt2": "Parent table",
+    "opt3": "Child table",
+    "opt4": "Referenced table",
+    "opt5": "primary key table",
+    "correctAns": "Parent table",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Versions of an object that can exist in the ABAP dictionary?",
+    "opt1": "Modifiable",
+    "opt2": "Active",
+    "correctAns": ["Modifiable", "Active"],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Multiple inheritance can be achieved in ABAP?",
+    "opt1": "True (through interface)",
+    "opt2": "False",
+    "correctAns": "True (through interface)",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "What is mandatory for the creation of table maintenance generator?",
+    "opt1": "Function group",
+    "correctAns": "Function group",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Buffering is recommended for tables with data typically that does change or gets updated frequently",
+    "opt1": "False",
+    "opt2": "True",
+    "correctAns": "False",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Material master data and its description is stored in the table.",
+    "opt1": "MARA-MARKT",
+    "opt2": "SPFLI",
+    "opt3": "SFLIGHT",
+    "correctAns": "MARA-MARKT",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "You define a formal parameter to a subroutine that accepts only internal table of type standard and type sorted as actual parameters. Which of the following generic ABAP data types must you use?",
+    "opt1": "Hashed table",
+    "opt2": "Standard table",
+    "opt3": "Index table",
+    "opt4": "Sorted table",
+    "correctAns": "Standard table",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Max Number of Primary Index in Transparent table?",
+    "opt1": "1",
+    "opt2": "4",
+    "opt3": "6",
+    "correctAns": "1",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Max Number of Secondary Index in Transparent table?",
+    "opt1": "1",
+    "opt2": "4",
+    "opt3": "6",
+    "correctAns": "6",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which of the following are ways in which Standard Tables can be enhanced?",
+    "opt1": "Custom include",
+    "opt2": "Direct field addition",
+    "opt3": "Append structure",
+    "correctAns": ["Custom include", "Append structure"],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Which table type would be most appropriate for accessing table rows using an index?",
+    "opt1": "Hashed table",
+    "opt2": "Standard table",
+    "opt3": "Sorted table",
+    "opt4": "None of these may be accessed using an index.",
+    "correctAns": "Hashed table",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "When creating a transparent table in the ABAP Dictionary, which step automatically creates the table in the underlying database?",
+    "opt1": "Adding technical settings to the table",
+    "opt2": "Checking the table syntax",
+    "opt3": "Saving the table",
+    "opt4": "Activating the table",
+    "correctAns": "Activating the table",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "A dictionary table is made available for use within an ABAP program via the TABLES statement.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "Name the type of ABAP Dictionary table that has these characteristics: Same number of fields as the database table, Same name as database table and Maps 1:1 to database table",
+    "opt1": "Pooled",
+    "opt2": "Cluster",
+    "opt3": "Transparent",
+    "opt4": "View",
+    "correctAns": "Transparent",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "If a table does not have MANDT as part of the primary key, it is.",
+    "opt1": "A structure",
+    "opt2": "Invalid",
+    "opt3": "Client-independent",
+    "opt4": "Not mandatory",
+    "correctAns": "Client-independent",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  },
+  {
+    "Question": "How many types of tables exist in data dictionary? (Multiple Answer)",
+    "opt1": "Transparent tables",
+    "opt2": "Internal Table",
+    "opt3": "Pool tables",
+    "opt4": "Hash Table",
+    "opt5": "Cluster tables",
+    "opt6": "Master Data Table",
+    "correctAns": ["Transparent tables", "Pool tables", "Cluster tables"],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": ""
+  }
+]
