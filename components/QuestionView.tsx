@@ -86,6 +86,7 @@ export default function QuestionView({ mode }: QuestionViewProps) {
   });
   const [showQuizDialog, setShowQuizDialog] = useState(false);
   const [showResultsDialog, setShowResultsDialog] = useState(false);
+  const [isMultiSelect, setIsMultiSelect] = useState(false);
   const currentQuestion =
     mode === "quiz" && quizState.isActive
       ? quizState.questions[currentQuestionIndex]
@@ -108,6 +109,8 @@ export default function QuestionView({ mode }: QuestionViewProps) {
         setAnswerType((prev) =>
           prev === "proposedAns" ? "correctAns" : "proposedAns"
         );
+      } else if (e.key.toLowerCase() === "c" && mode === "modify") {
+        setIsMultiSelect(prev => !prev);
       } else if (/^[1-6]$/.test(e.key)) {
         const optionIndex = parseInt(e.key) - 1;
         const option = currentOptions[optionIndex];
@@ -123,7 +126,7 @@ export default function QuestionView({ mode }: QuestionViewProps) {
 
     window.addEventListener("keydown", handleKeyPress);
     return () => window.removeEventListener("keydown", handleKeyPress);
-  }, [questions, currentQuestionIndex, isDoubt, mode, quizState.isActive]);
+  }, [questions, currentQuestionIndex, isDoubt, mode, quizState.isActive, isMultiSelect]);
 
   useEffect(() => {
     const handleTopicChange = async (event: Event) => {
@@ -211,15 +214,13 @@ export default function QuestionView({ mode }: QuestionViewProps) {
       setResource(currentQuestion.resource || "");
       if (mode === "quiz" && quizState.isActive) {
         setSelectedAnswers(quizState.answers[currentQuestionIndex] || []);
-      } else if (currentQuestion[answerType]) {
-        const answers = Array.isArray(currentQuestion[answerType])
-          ? (currentQuestion[answerType] as string[])
-          : [currentQuestion[answerType] as string];
-        setSelectedAnswers(
-          answers.filter((ans): ans is string => typeof ans === "string")
-        );
       } else {
-        setSelectedAnswers([]);
+        const answers = currentQuestion[answerType];
+        setSelectedAnswers(
+          Array.isArray(answers) ? answers : answers ? [answers] : []
+        );
+        // Set multi-select mode based on answer type
+        setIsMultiSelect(Array.isArray(answers) && answers.length > 1);
       }
     }
   }, [currentQuestionIndex, currentQuestion, answerType, mode, quizState]);
@@ -387,7 +388,7 @@ export default function QuestionView({ mode }: QuestionViewProps) {
       }));
       setSelectedAnswers(newAnswers);
     } else {
-      if (Array.isArray(currentQuestion?.correctAns)) {
+      if (isMultiSelect) {
         setSelectedAnswers((prev) =>
           prev.includes(value)
             ? prev.filter((a) => a !== value)
@@ -395,6 +396,13 @@ export default function QuestionView({ mode }: QuestionViewProps) {
         );
       } else {
         setSelectedAnswers([value]);
+        // For single select, save immediately
+        const updatedQuestions = [...questions];
+        updatedQuestions[currentQuestionIndex] = {
+          ...currentQuestion,
+          [answerType]: [value],
+        };
+        saveQuestions(updatedQuestions);
       }
     }
   };
@@ -425,9 +433,10 @@ export default function QuestionView({ mode }: QuestionViewProps) {
     try {
       if (!quizState.isActive) {
         // Update the current question's answer before saving
+        const currentAnswers = isMultiSelect ? selectedAnswers : [selectedAnswers[0]];
         updatedQuestions[currentQuestionIndex] = {
           ...updatedQuestions[currentQuestionIndex],
-          [answerType]: selectedAnswers,
+          [answerType]: currentAnswers,
         };
       }
 
@@ -494,6 +503,22 @@ export default function QuestionView({ mode }: QuestionViewProps) {
     return options;
   };
 
+  // Add auto-save functionality
+  useEffect(() => {
+    if (mode === "modify" && currentQuestion && selectedAnswers.length > 0) {
+      const timer = setTimeout(() => {
+        const updatedQuestions = [...questions];
+        updatedQuestions[currentQuestionIndex] = {
+          ...currentQuestion,
+          [answerType]: isMultiSelect ? selectedAnswers : [selectedAnswers[0]],
+        };
+        saveQuestions(updatedQuestions);
+      }, 1000); // Auto-save after 1 second of inactivity
+
+      return () => clearTimeout(timer);
+    }
+  }, [selectedAnswers, currentQuestionIndex, answerType, isMultiSelect]);
+
   if (!currentQuestion) {
     return (
       <div className="flex items-center justify-center h-full">
@@ -524,20 +549,33 @@ export default function QuestionView({ mode }: QuestionViewProps) {
                 : questions.length}
             </h2>
             {mode === "modify" && (
-              <Select
-                value={answerType}
-                onValueChange={(value: string) =>
-                  setAnswerType(value as AnswerType)
-                }
-              >
-                <SelectTrigger className="w-[180px]">
-                  <SelectValue placeholder="Select answer type" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="proposedAns">Proposed Answer</SelectItem>
-                  <SelectItem value="correctAns">Correct Answer</SelectItem>
-                </SelectContent>
-              </Select>
+              <>
+                <Select
+                  value={answerType}
+                  onValueChange={(value: string) =>
+                    setAnswerType(value as AnswerType)
+                  }
+                >
+                  <SelectTrigger className="w-[180px]">
+                    <SelectValue placeholder="Select answer type" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="proposedAns">Proposed Answer</SelectItem>
+                    <SelectItem value="correctAns">Correct Answer</SelectItem>
+                  </SelectContent>
+                </Select>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setIsMultiSelect(prev => !prev)}
+                  className={cn(
+                    "gap-2",
+                    isMultiSelect && "bg-primary text-primary-foreground hover:bg-primary/90"
+                  )}
+                >
+                  {isMultiSelect ? "Multi Select (C)" : "Single Select (C)"}
+                </Button>
+              </>
             )}
             {mode === "quiz" && quizState.isActive && (
               <div
@@ -572,6 +610,13 @@ export default function QuestionView({ mode }: QuestionViewProps) {
             }
           >
             {currentQuestion.Question}
+            {mode === "quiz" && (
+              <div className="text-sm text-muted-foreground mt-2">
+                {Array.isArray(currentQuestion.correctAns) && currentQuestion.correctAns.length > 1
+                  ? `Select ${currentQuestion.correctAns.length} correct answers`
+                  : "Select the correct answer"}
+              </div>
+            )}
             {mode === "modify" && (
               <p className="text-xs text-gray-300 mt-1">
                 Click to copy question
@@ -579,9 +624,10 @@ export default function QuestionView({ mode }: QuestionViewProps) {
             )}
           </div>
 
-          {Array.isArray(currentQuestion.correctAns) ? (
-            <div className="space-y-4">
-              {options.map((option) => (
+          <div className="space-y-4">
+            {mode === "modify" && answerType === "correctAns" ? (
+              // Always use checkboxes for correctAns in modify mode
+              options.map((option) => (
                 <div
                   key={option.key}
                   className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 p-2 rounded"
@@ -596,28 +642,87 @@ export default function QuestionView({ mode }: QuestionViewProps) {
                     {option.text}
                   </Label>
                 </div>
-              ))}
-            </div>
-          ) : (
-            <RadioGroup
-              value={selectedAnswers[0]}
-              onValueChange={handleAnswerChange}
-              className="space-y-4"
-            >
-              {options.map((option) => (
-                <div
-                  key={option.key}
-                  className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 hover:text-black p-2 rounded"
-                  onClick={() => handleAnswerChange(option.text)}
+              ))
+            ) : mode === "modify" && answerType === "proposedAns" ? (
+              // Use radio or checkbox based on isMultiSelect for proposedAns
+              isMultiSelect ? (
+                options.map((option) => (
+                  <div
+                    key={option.key}
+                    className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 p-2 rounded"
+                    onClick={() => handleAnswerChange(option.text)}
+                  >
+                    <Checkbox
+                      id={option.key}
+                      checked={selectedAnswers.includes(option.text)}
+                      onCheckedChange={() => handleAnswerChange(option.text)}
+                    />
+                    <Label htmlFor={option.key} className="cursor-pointer flex-1">
+                      {option.text}
+                    </Label>
+                  </div>
+                ))
+              ) : (
+                <RadioGroup
+                  value={selectedAnswers[0]}
+                  onValueChange={handleAnswerChange}
+                  className="space-y-4"
                 >
-                  <RadioGroupItem value={option.text} id={option.key} />
-                  <Label htmlFor={option.key} className="cursor-pointer flex-1">
-                    {option.text}
-                  </Label>
-                </div>
-              ))}
-            </RadioGroup>
-          )}
+                  {options.map((option) => (
+                    <div
+                      key={option.key}
+                      className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 p-2 rounded"
+                      onClick={() => handleAnswerChange(option.text)}
+                    >
+                      <RadioGroupItem value={option.text} id={option.key} />
+                      <Label htmlFor={option.key} className="cursor-pointer flex-1">
+                        {option.text}
+                      </Label>
+                    </div>
+                  ))}
+                </RadioGroup>
+              )
+            ) : (
+              // Quiz mode - use checkbox for multiple correct answers, radio for single
+              Array.isArray(currentQuestion.correctAns) && currentQuestion.correctAns.length > 1 ? (
+                options.map((option) => (
+                  <div
+                    key={option.key}
+                    className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 p-2 rounded"
+                    onClick={() => handleAnswerChange(option.text)}
+                  >
+                    <Checkbox
+                      id={option.key}
+                      checked={selectedAnswers.includes(option.text)}
+                      onCheckedChange={() => handleAnswerChange(option.text)}
+                    />
+                    <Label htmlFor={option.key} className="cursor-pointer flex-1">
+                      {option.text}
+                    </Label>
+                  </div>
+                ))
+              ) : (
+                <RadioGroup
+                  value={selectedAnswers[0]}
+                  onValueChange={handleAnswerChange}
+                  className="space-y-4"
+                >
+                  {options.map((option) => (
+                    <div
+                      key={option.key}
+                      className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 p-2 rounded"
+                      onClick={() => handleAnswerChange(option.text)}
+                    >
+                      <RadioGroupItem value={option.text} id={option.key} />
+                      <Label htmlFor={option.key} className="cursor-pointer flex-1">
+                        {option.text}
+                      </Label>
+                    </div>
+                  ))}
+                </RadioGroup>
+              )
+            )}
+          </div>
         </Card>
 
         <div className="flex justify-between items-center gap-8">
@@ -633,9 +738,9 @@ export default function QuestionView({ mode }: QuestionViewProps) {
           </Button>
 
           {mode === "modify" ? (
-            <div className="flex items-center justify-center w-full">
-              <h1 className="text-sm text-muted-foreground w-full">
-                Resource Url:
+            <div className="flex items-center justify-center w-full gap-4">
+              <h1 className="text-sm text-muted-foreground">
+                Resource:
               </h1>
               <input
                 type="text"

@@ -37,14 +37,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-screen bg-background">
-            <Navbar toggleSidebar={() => setShowSidebar(!showSidebar)} />
-            <div className="flex">
-              {showSidebar && !isQuizActive && <Sidebar />}
-              <main className="flex-1">
+          <div className="bg-background">
+            {/* <Navbar toggleSidebar={() => setShowSidebar(!showSidebar)} /> */}
+            {/* <div className="flex"> */}
+              {/* {showSidebar && !isQuizActive && <Sidebar />} */}
+              {/* <main className="flex-1"> */}
                 {children}
-              </main>
-            </div>
+              {/* </main> */}
+            {/* </div> */}
           </div>
           <Toaster />
         </ThemeProvider>

@@ -17,6 +17,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import ModeToggle from "./ModeToggle"
 
 interface NavbarProps {
   toggleSidebar: () => void;
@@ -30,7 +31,7 @@ export default function Navbar({ toggleSidebar }: NavbarProps) {
       <div className="flex h-16 items-center px-4 justify-between">
         <div className="flex items-center space-x-4">
           <Button variant="ghost" size="icon" onClick={toggleSidebar}>
-            <MenuIcon className="h-6 w-6" />
+            <MenuIcon className="h-8 w-8" />
           </Button>
           <Link href="/" className="text-xl font-semibold">SAP Quiz Platform</Link>
         </div>
@@ -41,7 +42,7 @@ export default function Navbar({ toggleSidebar }: NavbarProps) {
               <TooltipTrigger asChild>
                 <Link href="https://github.com/rahulvijay5/quizer" target="_blank">
                   <Button variant="ghost" size="icon">
-                    <GithubIcon className="h-5 w-5" />
+                    <GithubIcon className="h-8 w-8" />
                   </Button>
                 </Link>
               </TooltipTrigger>
@@ -56,7 +57,7 @@ export default function Navbar({ toggleSidebar }: NavbarProps) {
               <TooltipTrigger asChild>
                 <Link href="/history">
                   <Button variant="ghost" size="icon">
-                    <UserCircle2Icon className="h-5 w-5" />
+                    <UserCircle2Icon className="h-8 w-8" />
                   </Button>
                 </Link>
               </TooltipTrigger>
@@ -66,33 +67,14 @@ export default function Navbar({ toggleSidebar }: NavbarProps) {
             </Tooltip>
           </TooltipProvider>
 
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                <span className="sr-only">Toggle theme</span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem onClick={() => setTheme("light")}>
-                Light
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setTheme("dark")}>
-                Dark
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setTheme("system")}>
-                System
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <ModeToggle />    
 
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link href="/about">
                   <Button variant="ghost" size="icon">
-                    <InfoIcon className="h-5 w-5" />
+                        <InfoIcon className="h-8 w-8" />
                   </Button>
                 </Link>
               </TooltipTrigger>

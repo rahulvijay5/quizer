@@ -12,7 +12,10 @@
       "Float"
     ],
     "resource": "help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": [],
+    "proposedAns": [
+      "XString",
+      "Float"
+    ],
     "isDoubt": true
   },
   {
@@ -23,7 +26,10 @@
     "opt4": "YYYYDDMM",
     "correctAns": "YYYYMMDD",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": "",
+    "proposedAns": [
+      "YYYYMMDD",
+      "DDMMYYYY"
+    ],
     "quizAns": [
       "YYYYMMDD"
     ]
@@ -36,7 +42,11 @@
     "opt4": "None of the above",
     "correctAns": "A file is physically deleted",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": [],
+    "proposedAns": [
+      "A file is physically deleted",
+      "A file is logically deleted",
+      "Both A and B"
+    ],
     "isDoubt": true
   },
   {
@@ -45,9 +55,15 @@
     "opt2": "N",
     "opt3": "C",
     "opt4": "D",
-    "correctAns": "C",
+    "correctAns": [
+      "C"
+    ],
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": ""
+    "proposedAns": "",
+    "isDoubt": true,
+    "quizAns": [
+      "C"
+    ]
   },
   {
     "Question": "Which field should be a part of table for it to be client dependent?",
@@ -133,7 +149,7 @@
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": "",
     "quizAns": [
-      "X"
+      "F"
     ]
   },
   {

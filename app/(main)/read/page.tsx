@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
+import { filesFormated } from '@/lib/constants'
 
 interface Question {
   Question: string;
@@ -42,7 +43,7 @@ export default function ReadPage() {
             if (!response.ok) throw new Error(`Failed to load questions from ${file}`)
             const questions = await response.json()
             return {
-              topic: file.replace('files/', '').replace('.json', ''),
+              topic: filesFormated.find(f => f.filename === file)?.name || file,
               questions
             }
           })

@@ -1,0 +1,26 @@
+{
+  "questions": [
+    {
+      "Question": "What is SAP HANA?",
+      "opt1": "A database management system",
+      "opt2": "An in-memory database platform",
+      "opt3": "A cloud platform",
+      "opt4": "An ERP system",
+      "correctAns": ["opt2"],
+      "proposedAns": ["opt2"],
+      "resource": "https://www.sap.com/products/technology-platform/hana.html",
+      "isDoubt": false
+    },
+    {
+      "Question": "Which of the following are features of SAP HANA? (Select multiple)",
+      "opt1": "In-memory processing",
+      "opt2": "Column-based storage",
+      "opt3": "Advanced analytics",
+      "opt4": "Real-time data processing",
+      "correctAns": ["opt1", "opt2", "opt3", "opt4"],
+      "proposedAns": ["opt1", "opt2"],
+      "resource": "https://help.sap.com/docs/SAP_HANA_PLATFORM",
+      "isDoubt": false
+    }
+  ]
+} 
