@@ -16,7 +16,7 @@
       "XString",
       "Float"
     ],
-    "isDoubt": true
+    "isDoubt": false
   },
   {
     "Question": "What is the internal date format in SAP?",
@@ -24,7 +24,9 @@
     "opt2": "DDMMYYYY",
     "opt3": "MMDDYYYY",
     "opt4": "YYYYDDMM",
-    "correctAns": "YYYYMMDD",
+    "correctAns": [
+      "YYYYMMDD"
+    ],
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": [
       "YYYYMMDD",
@@ -40,14 +42,19 @@
     "opt2": "A file is logically deleted",
     "opt3": "Both A and B",
     "opt4": "None of the above",
-    "correctAns": "A file is physically deleted",
+    "correctAns": [
+      "A file is physically deleted"
+    ],
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": [
       "A file is physically deleted",
       "A file is logically deleted",
       "Both A and B"
     ],
-    "isDoubt": true
+    "isDoubt": true,
+    "quizAns": [
+      "Both A and B"
+    ]
   },
   {
     "Question": "Which data type has the default length of the blank default value?",
@@ -59,7 +66,9 @@
       "C"
     ],
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": "",
+    "proposedAns": [
+      "C"
+    ],
     "isDoubt": true,
     "quizAns": [
       "C"
@@ -73,7 +82,9 @@
     "opt4": "MBLNR",
     "correctAns": "MANDT",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": ""
+    "proposedAns": [
+      "MANDT"
+    ]
   },
   {
     "Question": "The number of decimal places for output can be defined within a WRITE statement.",
@@ -81,7 +92,9 @@
     "opt2": "False",
     "correctAns": "True",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": ""
+    "proposedAns": [
+      "True"
+    ]
   },
   {
     "Question": "Which among the following are valid predefined data types in ABAP?",
@@ -91,7 +104,9 @@
     "opt4": "All of the above",
     "correctAns": "All of the above",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": "",
+    "proposedAns": [
+      "All of the above"
+    ],
     "quizAns": [
       "All of the above"
     ]
@@ -103,7 +118,10 @@
     "opt3": "Reference Field",
     "correctAns": "Data Element",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": ""
+    "proposedAns": "",
+    "quizAns": [
+      "Data Element"
+    ]
   },
   {
     "Question": "Can you create a table with fields not referring to data elements?",

@@ -1,135 +1,2624 @@
 [
-    {
-      "Question": "Name of Type Group can contain a maximum of?",
-      "opt1": "10",
-      "opt2": "3",
-      "opt3": "5",
-      "opt4": "12",
-      "correctAns": "10",
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "Domain can be explicitly assigned to which of the following? Select all options that apply.",
-      "opt1": "FIXED VALUES",
-      "opt2": "VALUE TABLE",
-      "opt3": "VALUE FROM OTHER TRANSPARENT TABLES",
-      "opt4": "ALL OF THE ABOVE",
-      "correctAns": ["FIXED VALUES", "VALUE TABLE", "VALUE FROM OTHER TRANSPARENT TABLES"],
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "Domain can be explicitly assigned fixed values.",
-      "opt1": "True",
-      "opt2": "False",
-      "correctAns": "True",
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "Which of the following ABAP dictionary types can you use to define domains?",
-      "opt1": "FLOAT",
-      "opt2": "CHAR",
-      "opt3": "DEC",
-      "opt4": "DATE",
-      "opt5": "NUMC",
-      "correctAns": ["FLOAT", "CHAR", "DEC", "DATE", "NUMC"],
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "To which ABAP Dictionary definition can you assign fixed values?",
-      "opt1": "Data element",
-      "opt2": "Field of a transparent table",
-      "opt3": "Component of a structure",
-      "opt4": "Domain",
-      "correctAns": ["Data element", "Domain"],
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "What is the basic object of a data Dictionary?",
-      "opt1": "Domains",
-      "opt2": "Documentation",
-      "opt3": "Data Models",
-      "correctAns": "Domains",
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "Compared to a predefined ABAP type, what additional properties can be assigned to a domain? (Choose three)",
-      "opt1": "Fixed values",
-      "opt2": "Conversion exits",
-      "opt3": "Value tables",
-      "opt4": "Parameter IDs",
-      "opt5": "Search helps",
-      "correctAns": ["Fixed values", "Conversion exits", "Value tables"],
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "Value table can be assigned to.",
-      "opt1": "Domain",
-      "opt2": "Data element",
-      "opt3": "Fields",
-      "correctAns": "Domain",
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "Conversion routine is assigned to.",
-      "opt1": "Domain",
-      "opt2": "Data element",
-      "opt3": "Fields",
-      "correctAns": "Domain",
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "What is the invalid attribute of a domain?",
-      "opt1": "Type",
-      "opt2": "Fixed Values",
-      "opt3": "Length",
-      "opt4": "Header",
-      "correctAns": "Header",
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "You create a domain in the ABAP Dictionary. How can you use this domain?",
-      "opt1": "As the data type of a data element in the ABAP dictionary",
-      "opt2": "As the data type of an input field on a dialog screen",
-      "opt3": "As the data type of a selection screen field",
-      "opt4": "As the data type of a variable in an ABAP program",
-      "correctAns": ["As the data type of a data element in the ABAP dictionary", "As the data type of an input field on a dialog screen", "As the data type of a selection screen field", "As the data type of a variable in an ABAP program"],
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "Which object would you integrate to determine the length of a field on a screen?",
-      "opt1": "Data element",
-      "opt2": "Domain",
-      "opt3": "Fields",
-      "correctAns": "Domain",
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "We cannot create data element without creating the domain.",
-      "opt1": "True",
-      "opt2": "False",
-      "correctAns": "True",
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    },
-    {
-      "Question": "Pre-defined domains exist in the system and are available for your use. Is this statement true or false?",
-      "opt1": "True",
-      "opt2": "False",
-      "correctAns": "True",
-      "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-      "proposedAns": ""
-    }
-  ]
-  
+  {
+    "Question": "Which of the following data types are predefined ABAP data types?",
+    "opt1": "DECFLOAT34",
+    "opt2": "String",
+    "opt3": "XString",
+    "opt4": "Float",
+    "opt5": "Decimals",
+    "correctAns": [
+      "DECFLOAT34",
+      "XString",
+      "Float"
+    ],
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "What is the internal date format in SAP?",
+    "opt1": "YYYYMMDD",
+    "opt2": "DDMMYYYY",
+    "opt3": "MMDDYYYY",
+    "opt4": "YYYYDDMM",
+    "correctAns": "YYYYMMDD",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "What happens when the DELETE DATASET statement is used?",
+    "opt1": "A file is physically deleted",
+    "opt2": "A file is logically deleted",
+    "opt3": "Both A and B",
+    "opt4": "None of the above",
+    "correctAns": "A file is physically deleted",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "Why are the dequeue modules hardly used?",
+    "opt1": "Locks are released automatically at the end of the program",
+    "opt2": "Locks are passed over to update techniques",
+    "opt3": "Locks are only used in certain situations",
+    "opt4": "None of the above",
+    "correctAns": "Locks are released automatically at the end of the program",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json",
+    "isDoubt": false,
+    "quizAns": [
+      "Locks are released automatically at the end of the program"
+    ]
+  },
+  {
+    "Question": "Which field should be a part of table for it to be client dependent?",
+    "opt1": "MATNR",
+    "opt2": "MANDT",
+    "opt3": "VBELN",
+    "opt4": "MBLNR",
+    "correctAns": "MANDT",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "The number of decimal places for output can be defined within a WRITE statement.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "Which among the following are valid predefined data types in ABAP?",
+    "opt1": "P",
+    "opt2": "X",
+    "opt3": "Decfloat16",
+    "opt4": "All of the above",
+    "correctAns": "All of the above",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "Where are semantic characteristics of a field defined?",
+    "opt1": "Domain",
+    "opt2": "Data Element",
+    "opt3": "Reference Field",
+    "correctAns": "Data Element",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "Can you create a table with fields not referring to data elements?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "Yes",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "Which of the following predefined ABAP types is incomplete?",
+    "opt1": "F",
+    "opt2": "P",
+    "opt3": "XSTRING",
+    "opt4": "STRING",
+    "correctAns": "STRING",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "Data element is an example of",
+    "opt1": "Physical Definition",
+    "opt2": "Business Object",
+    "opt3": "Semantic Domain",
+    "opt4": "Technical Domain",
+    "correctAns": "Semantic Domain",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "Which of the following ABAP standard types are incomplete?",
+    "opt1": "F",
+    "opt2": "N",
+    "opt3": "X",
+    "opt4": "STRING",
+    "correctAns": "STRING",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "You define a generic variable that can hold the ABAP types C, D, N, STRING, and T. You want to restrict the use of other ABAP types. Which generic data type must you use in the definition?",
+    "opt1": "CLIKE",
+    "opt2": "SIMPLE",
+    "opt3": "DATA",
+    "opt4": "CSEQUENCE",
+    "correctAns": "CLIKE",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "Which of the following Data Types are allowed in ABAP? (Choose two)",
+    "opt1": "DECFLOAT64",
+    "opt2": "DECFLOAT16",
+    "opt3": "DECFLOAT34",
+    "opt4": "DECFLOAT32",
+    "correctAns": [
+      "DECFLOAT16",
+      "DECFLOAT34"
+    ],
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "We provide reference table and reference field to which type of fields?",
+    "opt1": "DECIMAL",
+    "opt2": "CURRENCY",
+    "opt3": "QUANTITY",
+    "correctAns": "DECIMAL",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "Which are not predefined data types in ABAP?",
+    "opt1": "X",
+    "opt2": "P",
+    "opt3": "T",
+    "opt4": "W",
+    "correctAns": "T",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json"
+  },
+  {
+    "Question": "Name of Type Group can contain a maximum of?",
+    "opt1": "10",
+    "opt2": "3",
+    "opt3": "5",
+    "opt4": "12",
+    "correctAns": "10",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": [
+      null
+    ],
+    "isDoubt": false,
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "Domain can be explicitly assigned to which of the following? Select all options that apply.",
+    "opt1": "FIXED VALUES",
+    "opt2": "VALUE TABLE",
+    "opt3": "VALUE FROM OTHER TRANSPARENT TABLES",
+    "opt4": "ALL OF THE ABOVE",
+    "correctAns": [
+      "FIXED VALUES",
+      "VALUE TABLE",
+      "VALUE FROM OTHER TRANSPARENT TABLES"
+    ],
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "Domain can be explicitly assigned fixed values.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "Which of the following ABAP dictionary types can you use to define domains?",
+    "opt1": "FLOAT",
+    "opt2": "CHAR",
+    "opt3": "DEC",
+    "opt4": "DATE",
+    "opt5": "NUMC",
+    "correctAns": [
+      "FLOAT",
+      "CHAR",
+      "DEC",
+      "DATE",
+      "NUMC"
+    ],
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "To which ABAP Dictionary definition can you assign fixed values?",
+    "opt1": "Data element",
+    "opt2": "Field of a transparent table",
+    "opt3": "Component of a structure",
+    "opt4": "Domain",
+    "correctAns": [
+      "Data element",
+      "Domain"
+    ],
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "What is the basic object of a data Dictionary?",
+    "opt1": "Domains",
+    "opt2": "Documentation",
+    "opt3": "Data Models",
+    "correctAns": "Domains",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "Compared to a predefined ABAP type, what additional properties can be assigned to a domain? (Choose three)",
+    "opt1": "Fixed values",
+    "opt2": "Conversion exits",
+    "opt3": "Value tables",
+    "opt4": "Parameter IDs",
+    "opt5": "Search helps",
+    "correctAns": [
+      "Fixed values",
+      "Conversion exits",
+      "Value tables"
+    ],
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "Value table can be assigned to.",
+    "opt1": "Domain",
+    "opt2": "Data element",
+    "opt3": "Fields",
+    "correctAns": "Domain",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "Conversion routine is assigned to.",
+    "opt1": "Domain",
+    "opt2": "Data element",
+    "opt3": "Fields",
+    "correctAns": "Domain",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "What is the invalid attribute of a domain?",
+    "opt1": "Type",
+    "opt2": "Fixed Values",
+    "opt3": "Length",
+    "opt4": "Header",
+    "correctAns": "Header",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "You create a domain in the ABAP Dictionary. How can you use this domain?",
+    "opt1": "As the data type of a data element in the ABAP dictionary",
+    "opt2": "As the data type of an input field on a dialog screen",
+    "opt3": "As the data type of a selection screen field",
+    "opt4": "As the data type of a variable in an ABAP program",
+    "correctAns": [
+      "As the data type of a data element in the ABAP dictionary",
+      "As the data type of an input field on a dialog screen",
+      "As the data type of a selection screen field",
+      "As the data type of a variable in an ABAP program"
+    ],
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "Which object would you integrate to determine the length of a field on a screen?",
+    "opt1": "Data element",
+    "opt2": "Domain",
+    "opt3": "Fields",
+    "correctAns": "Domain",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "We cannot create data element without creating the domain.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "Pre-defined domains exist in the system and are available for your use. Is this statement true or false?",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/DomainsQuestions.json"
+  },
+  {
+    "Question": "Which of the following cannot be modified using the ABAP dictionary?",
+    "opt1": "TYPE GROUPS",
+    "opt2": "SEARCH HELP",
+    "opt3": "LOCK OBJECTS",
+    "opt4": "FUNCTION GROUPS",
+    "correctAns": "FUNCTION GROUPS",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Fields involved in foreign key relationship should share same data element and domain.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "False",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "We should assign a value to those fields if they DO NOT have a data dictionary reference to display column headings:",
+    "opt1": "SELTEXT",
+    "opt2": "REPTEXT",
+    "opt3": "COLTEXT",
+    "opt4": "All of the above",
+    "correctAns": "All of the above",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Which of the following does not physically exist in the underlying database? More than one answer is correct?",
+    "opt1": "View",
+    "opt2": "Internal Table",
+    "opt3": "Structure",
+    "opt4": "Transparent table",
+    "opt5": "Domain",
+    "correctAns": "View, Internal Table, Structure, Domain",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Which of the following are true?",
+    "opt1": "TABLE is used as a synonym for STANDARD TABLE",
+    "opt2": "You can only access a hashed table using the generic key operations. Explicit or implicit index operations (such as LOOP ... FROM oe INSERT itab within a LOOP) are not allowed.",
+    "opt3": "All hashed tables are index tables.",
+    "opt4": "We have to define the hash procedure explicitly for HASHED TABLE",
+    "correctAns": "All hashed tables are index tables.",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Can a transparent table exist in data dictionary but not in the database physically?",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "False",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "You cannot assign a local data object defined in a subroutine or function module to a field group.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What can you create using the ABAP Dictionary?",
+    "opt1": "Domains",
+    "opt2": "Type pools",
+    "opt3": "Transparent tables",
+    "opt4": "Field symbols",
+    "opt5": "Internal Tables",
+    "correctAns": "Domains, Type pools, Transparent tables",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "When should you use a hashed internal table?",
+    "opt1": "When accessing mainly single records",
+    "opt2": "When accessing by secondary key",
+    "opt3": "When accessing using the left-justified part of the key",
+    "opt4": "When accessing always by primary key",
+    "opt5": "When accessing by index",
+    "correctAns": "When accessing mainly single records",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What features are provided by the database interface? (Choose three)",
+    "opt1": "Database independence of application programs",
+    "opt2": "Conversion of Open SQL statements from ABAP statements into the corresponding database statements",
+    "opt3": "Syntax check of Native SQL commands",
+    "opt4": "Access to SAP table buffers",
+    "opt5": "Data consistency check using foreign key relationships",
+    "correctAns": "Database independence of application programs, Conversion of Open SQL statements from ABAP statements into the corresponding database statements, Data consistency check using foreign key relationships",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "For which of the following purposes can you use the ABAP dictionary?",
+    "opt1": "To create locks objects",
+    "opt2": "To activate the logging for transparent tables",
+    "opt3": "To maintain program translations",
+    "opt4": "To create development classes",
+    "correctAns": "To create locks objects, To create development classes",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Which of the following structures is created when you use a table type to define one of its components?",
+    "opt1": "Deep structure",
+    "opt2": "Nested structure",
+    "opt3": "Flat structure",
+    "opt4": "Append structure",
+    "correctAns": "Flat structure",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "You want to create a transparent table in the ABAP dictionary. When is the table physically created in the database?",
+    "opt1": "When you activate the table",
+    "opt2": "When you run the database utility transaction (SE14)",
+    "opt3": "When you insert the table name and select Create",
+    "opt4": "When you save the table",
+    "correctAns": "When you activate the table",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "When does SAP recommend that you use a hashed table?",
+    "opt1": "When a table must be sorted automatically by key in ascending order",
+    "opt2": "When a table is very large, and you want to access the table by key only",
+    "opt3": "When a table is very large, and you want to access the table by index only",
+    "opt4": "When a table must be accessible by both index and key",
+    "correctAns": "When a table is very large, and you want to access the table by key only",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What do global types and local types have in common?",
+    "opt1": "Documentation",
+    "opt2": "Field labels",
+    "opt3": "Search help",
+    "opt4": "Technical information",
+    "correctAns": "Documentation",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Which action on the underlying dictionary object triggers a database table conversion?",
+    "opt1": "Reducing the size of a field",
+    "opt2": "Inserting an append structure",
+    "opt3": "Inserting a field of type reference",
+    "opt4": "Changing the order of non-key fields",
+    "correctAns": "Inserting an append structure",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Which database objects can you create in the ABAP Dictionary?",
+    "opt1": "Projection views",
+    "opt2": "Logical databases",
+    "opt3": "Indexes",
+    "opt4": "Foreign key relationships",
+    "correctAns": "Indexes, Foreign key relationships",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Why ‘+’ sign is displayed instead of the field description while maintaining the table entries using TCODE – sm30?",
+    "opt1": "Short description is not provided for the field.",
+    "opt2": "Data element field label is not maintained",
+    "opt3": "Both a and b",
+    "opt4": "None of the above",
+    "correctAns": "Both a and b",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Which is the transaction code that is used to access ABAP Dictionary?",
+    "opt1": "SE10",
+    "opt2": "SE38",
+    "opt3": "SE18",
+    "opt4": "SE11",
+    "correctAns": "SE11",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "A view is an ABAP Dictionary object.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Data elements and domains are used to describe the characteristics of fields. Is this a true or a false statement?",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "SAP stores both master data and transaction data in transparent tables.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "When the user hits the F4 key, both data element documentation and data element supplemental documentation is displayed.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "ABAP Dictionary objects are to be activated individually (immediately after each object is saved with the activation icon).",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "While defining Foreign Key Relationship, system suggests a Foreign Key relationship for you. Is this true or false?",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Which of the following statements are true for a Foreign Key Relationship? Choose all that apply.",
+    "opt1": "It can be defined between tables and must be explicitly defined at field level",
+    "opt2": "It is used to ensure the consistency of data",
+    "opt3": "While defining Foreign Key Relationship cardinality need not be specified",
+    "opt4": "None of the options are correct",
+    "correctAns": "It can be defined between tables and must be explicitly defined at field level, It is used to ensure the consistency of data",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What requirement exists if a field is defined in the dictionary of type CURR? Choose from the given options.",
+    "opt1": "The field must be numeric",
+    "opt2": "Decimals must be defined in the domain",
+    "opt3": "The field must be linked to another field of type CUKY",
+    "opt4": "No other requirement exists",
+    "correctAns": "Decimals must be defined in the domain",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What is ABAP Dictionary?",
+    "opt1": "Enforces data integrity",
+    "opt2": "Manages data definitions without redundancy",
+    "opt3": "Is tightly integrated with the rest of the ABAP workbench",
+    "opt4": "All of the above",
+    "correctAns": "All of the above",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Identify the basic objects of the data dictionary.",
+    "opt1": "Domain",
+    "opt2": "Date element",
+    "opt3": "Tables",
+    "opt4": "All of the above",
+    "correctAns": "All of the above",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What is true about a check table?",
+    "opt1": "Foreign key fields can accept only values which exist in the check table",
+    "opt2": "Check table fields can accept only values which exist in the check table",
+    "opt3": "Foreign key fields can accept any values regardless of the check table",
+    "opt4": "Check tables are not used for restricting values in the foreign key tables",
+    "correctAns": "Foreign key fields can accept only values which exist in the check table",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What is needed to ensure a check field is verified against the referenced key field of the check table?",
+    "opt1": "Same data element is required for check field and referenced field",
+    "opt2": "Same domain is required for check field and referenced field",
+    "opt3": "Same data type only is required for check field and referenced field",
+    "opt4": "All key fields MUST have domain equality between check table and foreign key table",
+    "correctAns": "All key fields MUST have domain equality between check table and foreign key table",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Which transaction code is used for deleting entire table contents?",
+    "opt1": "SE17",
+    "opt2": "SE30",
+    "opt3": "SE14",
+    "opt4": "SE09",
+    "correctAns": "SE14",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Which of the following are true?",
+    "opt1": "Pooled tables can be used to store control data like screen sequences, program parameters etc.",
+    "opt2": "Several cluster tables are stored in one corresponding table on the database.",
+    "opt3": "None of the above.",
+    "correctAns": "Pooled tables can be used to store control data like screen sequences, program parameters etc.",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "From the list below which is not a data class in the Dictionary?",
+    "opt1": "Master data",
+    "opt2": "Organizational data",
+    "opt3": "Project data",
+    "opt4": "System data",
+    "correctAns": "System data",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What tool can you call from the Repository Information System to search for Dictionary objects and their users?",
+    "opt1": "Data elements",
+    "opt2": "Where-used list",
+    "opt3": "Buffering type of tables",
+    "correctAns": "Where-used list",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What is true about the primary index of a table? More than one answer is correct.",
+    "opt1": "The key fields of the table make up the primary index",
+    "opt2": "The primary index ID is designated by the Database Administrator",
+    "opt3": "The developer designates the fields to be used as the primary index",
+    "opt4": "The primary index is automatically created when the table is activated",
+    "correctAns": "The key fields of the table make up the primary index, The primary index is automatically created when the table is activated",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What is a structured type in the ABAP dictionary that has no physical table definition in the underlying database referred to as?",
+    "opt1": "table",
+    "opt2": "structured data type",
+    "opt3": "structure",
+    "opt4": "table type",
+    "correctAns": "structure",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Identify the case where table buffering should be set off.",
+    "opt1": "When the most current data is required",
+    "opt2": "When the most current data is not required",
+    "opt3": "For Small Static non-volatile tables",
+    "opt4": "For Global Master Data",
+    "correctAns": "When the most current data is required",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "HIDE statement supports deep structures. State whether the statement is true or false.",
+    "opt1": "True",
+    "opt2": "False",
+    "opt3": "May be applicable",
+    "opt4": "Not applicable",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What is Metadata?",
+    "opt1": "It is a data dictionary which is a centralized storage location for information about the data that is stored in a database",
+    "opt2": "It is a data dictionary which is a de-centralized storage location for information about the data that is stored in a database",
+    "opt3": "None of the options are correct",
+    "correctAns": "It is a data dictionary which is a centralized storage location for information about the data that is stored in a database",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Which transaction type will be used to attach transaction code to the table maintenance generator? Choose the appropriate option.",
+    "opt1": "Dialog Transaction",
+    "opt2": "Report Transaction",
+    "opt3": "OO Transaction",
+    "opt4": "Parameter Transaction",
+    "correctAns": "Dialog Transaction",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Tables used to store the I-doc records are:",
+    "opt1": "EDIDC, EDIDE, EDIDF",
+    "opt2": "EDIDD, EDIDG, EDIDK",
+    "opt3": "EDIDC, EDIDD, EDIDS",
+    "opt4": "None of the options are correct",
+    "correctAns": "EDIDC, EDIDD, EDIDS",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "We can add custom fields to standard SAP tables using following ways. Choose all that apply.",
+    "opt1": "Directly Editing Table",
+    "opt2": "Using Customizing Includes",
+    "opt3": "Using Append Structures",
+    "opt4": "Using Substructures",
+    "correctAns": "Using Customizing Includes, Using Append Structures",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "The complete technical definition of a table field is determined by the field's:",
+    "opt1": "Domain",
+    "opt2": "Field name",
+    "opt3": "Data type",
+    "opt4": "Data element",
+    "correctAns": "Data element",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Variables in an ABAP code can be defined as being similar to data-dictionary elements, using:",
+    "opt1": "LIKE",
+    "opt2": "FOR",
+    "opt3": "TYPE",
+    "opt4": "None of the above",
+    "correctAns": "LIKE",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "VERSIONS of an object that can exist in the ABAP Dictionary are:",
+    "opt1": "Modifiable",
+    "opt2": "Active",
+    "opt3": "Inactive",
+    "opt4": "Revised",
+    "correctAns": "Active, Inactive, Revised",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Which options exist for extending a table without having to modify a table within the ABAP Dictionary? More than one answer is correct.",
+    "opt1": "append fields to the table.",
+    "opt2": "use append structures.",
+    "opt3": "use customer includes.",
+    "opt4": "CI includes.",
+    "correctAns": "append fields to the table., use append structures., use customer includes.",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Where are Dictionary runtime objects used?",
+    "opt1": "in the dictionary",
+    "opt2": "in structures",
+    "opt3": "in table 'nametab'",
+    "opt4": "in work processes",
+    "correctAns": "",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What are the main functions of a Data Dictionary? More than one answer is correct.",
+    "opt1": "To insulate the ABAP/4 developer from the database",
+    "opt2": "To support the creation and management of metadata (data about data)",
+    "opt3": "To provide data security at the application level",
+    "opt4": "To connect to the operating system",
+    "correctAns": "To insulate the ABAP/4 developer from the database, To support the creation and management of metadata (data about data)",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Where does information come from when you press F1 on a screen field?",
+    "opt1": "Domain short text",
+    "opt2": "Search help",
+    "opt3": "Data element documentation",
+    "opt4": "Domain Help values",
+    "correctAns": "Data element documentation",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "What is the use of SPDD transaction?",
+    "opt1": "To adjust SAP custom object.",
+    "opt2": "To adjust SAP custom dictionary object.",
+    "opt3": "To adjust SAP standard repository object.",
+    "opt4": "To adjust SAP Standard dictionary object.",
+    "correctAns": "To adjust SAP Standard dictionary object.",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "To include a field on your screen that is not in the ABAP Dictionary, which include program should contain the data declaration for the field?",
+    "opt1": "PBO module include program",
+    "opt2": "TOP include program",
+    "opt3": "PAI module include program",
+    "opt4": "Subroutine include program",
+    "correctAns": "TOP include program",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Data of the basic list is available by default when secondary list is processed.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "The business (non-technical) definition of a table field is determined by the field's?",
+    "opt1": "domain",
+    "opt2": "field name",
+    "opt3": "data type",
+    "opt4": "data element",
+    "correctAns": "data element",
+    "resource": "https://help.sap.com/viewer/abap/7.5/en-US/ab3c0a8b1731499f913b09ab55915a0b.html",
+    "proposedAns": "",
+    "sourceTopic": "files/GeneralOnDataObjectsEtc.json"
+  },
+  {
+    "Question": "Several users (transactions) can access locked data at the same time in display mode. A request for another lock is accepted even if it comes from another user. What type of lock is being referred to here?",
+    "opt1": "Exclusive (write lock)",
+    "opt2": "Exclusive, but not cumulative lock (enhanced write lock)",
+    "opt3": "SAP lock",
+    "opt4": "Shared lock (read lock)",
+    "correctAns": "Shared lock (read lock)",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "What will happen if the lock object is not used for database update?",
+    "opt1": "Database table will not be updated",
+    "opt2": "It may lead to inconsistency as someone else might be updating the record at the same time",
+    "opt3": "Tables will be updated with the warning message",
+    "opt4": "Explicit commit is required as SAP stores the value internally but does not update the database table unless commit is executed",
+    "correctAns": "It may lead to inconsistency as someone else might be updating the record at the same time",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "The database system releases each database lock if an implicit database commit is triggered.",
+    "opt1": "Application server (AS) ABAP.",
+    "opt2": "True",
+    "opt3": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Is a special table-related function module that is created automatically when you activate a table-related lock object.",
+    "opt1": "Lock Module",
+    "opt2": "Commit Module",
+    "opt3": "Enqueue Module",
+    "opt4": "Dequeue Module",
+    "correctAns": "Lock Module",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Why are the dequeue modules hardly used?",
+    "opt1": "Locks are released automatically at the end of the program",
+    "opt2": "Locks are passed over to update techniques",
+    "opt3": "Locks are only used in certain situations",
+    "opt4": "None of the above",
+    "correctAns": "Locks are released automatically at the end of the program",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "All database locks are released no later than the next database commit or rollback.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "ENQUEUE and DEQUEUE modules are generated by default when lock objects are activated.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json",
+    "quizAns": [
+      "True"
+    ]
+  },
+  {
+    "Question": "The following are true about database locking.",
+    "opt1": "Database systems set physical locks on all lines affected by a database call.",
+    "opt2": "Read locks prevent the setting of further read locks for the objects in question.",
+    "opt3": "Read locks prevent other transactions from setting write locks for the objects in question.",
+    "opt4": "Write locks allow other transactions to set read locks for the objects in question.",
+    "correctAns": [
+      "Database systems set physical locks on all lines affected by a database call.",
+      "Read locks prevent other transactions from setting write locks for the objects in question."
+    ],
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "If an application program that has created lock entries is terminated, the system releases the locks automatically(implicitly).",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "You can send the contents of the lock container to the lock management by using the “ENQUEUE_ESFLIGHT” function module.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Mode _______ sets a lock for changing data and can be accumulated.",
+    "opt1": "A",
+    "opt2": "B",
+    "opt3": "C",
+    "opt4": "E",
+    "correctAns": "E",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "The existing enqueue and dequeue function module scan be used for optimistic locks.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "False",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json",
+    "quizAns": [
+      "True"
+    ]
+  },
+  {
+    "Question": "The optimistic lock is converted into an exclusive lock (type 'e') by using lock mode.",
+    "opt1": "A",
+    "opt2": "E",
+    "opt3": "R",
+    "correctAns": "E",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "A pessimistic lock is set if the user displays data in the change mode.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Lock object is created with the initial letter.",
+    "opt1": "R",
+    "opt2": "D",
+    "opt3": "C",
+    "opt4": "E",
+    "correctAns": "E",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/ce19366a16f2451c8a5127d4b91cd015.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "SAP locks are dependent on database locks?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "Yes",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Can we create more than one lock objects for a table?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "Yes",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Shared lock cannot be created on the entry that does not exist in database table?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "Yes",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Can a lock object be made RFC enabled?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "Yes",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "All the locks in SAP are managed by ‘Enqueue Server’.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Naming convention for lock object is",
+    "opt1": "Z_NAME",
+    "opt2": "D_NAME",
+    "opt3": "EZ_NAME OR EY_NAME",
+    "correctAns": "EZ_NAME OR EY_NAME",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "What table fields are required as lock argument in a lock object?",
+    "opt1": "Any primary key fields and any secondary key fields",
+    "opt2": "The foreign key dependencies",
+    "opt3": "The primary key fields",
+    "opt4": "Any primary key fields",
+    "correctAns": "The primary key fields",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Which transaction is used to view lock table?",
+    "opt1": "SM11",
+    "opt2": "SM37",
+    "opt3": "SM12",
+    "correctAns": "SM12",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Lock table is stored in ‘Lock Server’ / ‘Enqueue Server’?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "Yes",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "We have created a lock object ‘EZ22_EKKO’. Then name of generated FM will be?",
+    "opt1": "Enqueue_ez22_ekko and dequeue_ez22_ekko",
+    "opt2": "ez22_ekko_ Enqueue and ez22_ekko_ dequeue",
+    "opt3": "FM will not be generated",
+    "correctAns": "Enqueue_ez22_ekko and dequeue_ez22_ekko",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "If a table is locked in Exclusive mode, another user request for read lock. What will happen?",
+    "opt1": "Lock will be granted in display mode",
+    "opt2": "Lock will not be granted",
+    "correctAns": "Lock will not be granted",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "User had locked a table for the key1 = ‘45000012’ in exclusive mode. Another exclusive lock request comes from different user for key1 = ‘45000013’. What will happen?",
+    "opt1": "It will not allow to lock the table as table has been locked in E mode",
+    "opt2": "Lock will be granted",
+    "correctAns": "Lock will be granted",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "User had locked a table for the key1 = ‘ABCD’ in shared mode. Another shared lock request comes from different user for same key. What will happen?",
+    "opt1": "Lock will not be granted",
+    "opt2": "Lock will be granted",
+    "correctAns": "Lock will be granted",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Which of the following statement is correct?",
+    "opt1": "Without call of FM ‘DEQUEUE_LOCK_OBJECT_NAME’, lock can never be released from the table.",
+    "opt2": "After the end of transaction, lock released automatically",
+    "correctAns": "After the end of transaction, lock released automatically",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "If we set parameter ‘_wait’ value as ‘X’ in FM ‘ENQUEUE_LOCK_OBJECT_NAME’. What will happen?",
+    "opt1": "Foreign lock exception will be triggered as soon as lock request is rejected",
+    "opt2": "Lock request will be repeated at the set of intervals until the system time limit.",
+    "opt3": "Lock request will be repeated until it acquires the lock",
+    "correctAns": "Lock request will be repeated until it acquires the lock",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "If we set parameter ‘_COLLECT’ as ‘X’ in FM ‘ENQUEUE_LOCK_OBJECT_NAME’. What will happen?",
+    "opt1": "System places lock requests or release requests in a local lock container",
+    "opt2": "System sends lock requests or release request directly to the lock server",
+    "correctAns": "System places lock requests or release requests in a local lock container",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "‘_SCOPE’ parameter in FM ‘ENQUEUE_LOCK_OBJECT_NAME’ has default value",
+    "opt1": "3",
+    "opt2": "2",
+    "opt3": "1",
+    "correctAns": "3",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Which parameter returns username if foreign lock exception occurs in ‘Enqueue’ function module?",
+    "opt1": "SY-MSGV3",
+    "opt2": "SY-MSGV2",
+    "opt3": "SY-MSGV1",
+    "correctAns": "SY-MSGV1",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Which mode of locking can be requested more than one time by same transaction?",
+    "opt1": "E and X",
+    "opt2": "X and S",
+    "opt3": "E and S",
+    "correctAns": "E and S",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "Can we pass wildcard character ‘@’ in our lock argument?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "Yes",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "TCODE for defining locks?",
+    "opt1": "SE12",
+    "opt2": "SE11",
+    "opt3": "SE13",
+    "correctAns": "SE12",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "The following are true about database locking: Database systems set physical locks on all lines affected by a database call. Read locks prevent the setting of further read locks for the objects in question. Read locks prevent other transactions from setting write locks for the objects in question. Write locks allow other transactions to set read locks for the objects in question. Which statement is correct?",
+    "opt1": "All are correct",
+    "opt2": "Read locks prevent further write locks from being set",
+    "opt3": "Write locks prevent further read locks from being set",
+    "correctAns": "All are correct",
+    "resource": "https://help.sap.com/viewer/8e6d3c3875b84ccf80e3bbf939a2b59e/1909.000/en-US/d073b9a4bfc34759b47820795b1d846e.html",
+    "proposedAns": "",
+    "sourceTopic": "files/LockObjectQuestions.json"
+  },
+  {
+    "Question": "What are the minimum number of primary indexes that can be created in SAP?",
+    "opt1": "1",
+    "opt2": "2",
+    "opt3": "3",
+    "opt4": "None of the above",
+    "correctAns": "1",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "What are the maximum number of base tables that can be used in the project view in SAP?",
+    "opt1": "1",
+    "opt2": "2",
+    "opt3": "3",
+    "opt4": "4",
+    "correctAns": "4",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "What is the MAXIMUM number of secondary indexes that can be created?",
+    "opt1": "1",
+    "opt2": "2",
+    "opt3": "3",
+    "opt4": "None of the above",
+    "correctAns": "None of the above",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "When a table is locked in exclusive mode, another user requests for read",
+    "opt1": "Lock will be granted",
+    "opt2": "Lock will not be granted",
+    "opt3": "Lock will be generated in display mode",
+    "opt4": "None of the above",
+    "correctAns": "Lock will not be granted",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json",
+    "quizAns": [
+      "Lock will be granted"
+    ]
+  },
+  {
+    "Question": "Which of the following best describes the data class application while creating a DDIC Table?",
+    "opt1": "Master data - data that is rarely changed",
+    "opt2": "Transaction data - data that is changed",
+    "opt3": "Organization data - customizing data changed only rarely",
+    "opt4": "None of the above",
+    "correctAns": "Master data - data that is rarely changed",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "When would you store a table as a row-based select all option that apply:",
+    "opt1": "When the number of records is huge",
+    "opt2": "When all columns of the tables are relevant",
+    "opt3": "When the table contains several repeated values",
+    "opt4": "When aggregation is not required",
+    "correctAns": "When aggregation is not required",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "How many append structures can be inserted in a table?",
+    "opt1": "1",
+    "opt2": "2",
+    "opt3": "3",
+    "opt4": "Any number of tables",
+    "correctAns": "Any number of tables",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json",
+    "quizAns": [
+      "Any number of tables"
+    ]
+  },
+  {
+    "Question": "What is the maximum number of structures that can be included in table or structure?",
+    "opt1": "9",
+    "opt2": "8",
+    "opt3": "4",
+    "opt4": "7",
+    "correctAns": "9",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "What is the maximum number of tables joins that can be used in Hana?",
+    "opt1": "100",
+    "opt2": "150",
+    "opt3": "50",
+    "opt4": "25",
+    "correctAns": "100",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "“MANDT” field in table makes it",
+    "opt1": "Database dependent",
+    "opt2": "Client independent",
+    "opt3": "Client dependent",
+    "opt4": "Database independent",
+    "correctAns": "Client dependent",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "You are writing a transaction to update a database table. Which of the following elements must the program continue?",
+    "opt1": "A logical database",
+    "opt2": "A table buffers refresh on the application server",
+    "opt3": "A call for enqueue dequeue function module",
+    "opt4": "An authority check statement",
+    "correctAns": [
+      "A logical database",
+      "A call for enqueue dequeue function module",
+      "An authority check statement"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "What is the difference between inner join and left outer joins?",
+    "opt1": "Inner join - common entries",
+    "opt2": "Left outer join - all entries from left side DB table and corresponding entries in other side",
+    "opt3": "Inner join - all entries from both tables",
+    "opt4": "Left outer join - only matching entries from the left side",
+    "correctAns": [
+      "Inner join - common entries",
+      "Left outer join - all entries from left side DB table and corresponding entries in other side"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "When would you use a column store table instead of a row store table? Select option",
+    "opt1": "When you require aggregation and analysis of values",
+    "opt2": "When there are mainly distinct values in the table",
+    "opt3": "When you want to enable a full-text search of the table",
+    "opt4": "When the table has a small number of records",
+    "correctAns": [
+      "When you require aggregation and analysis of values",
+      "When there are mainly distinct values in the table"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "What are the maximum number of fields that can be part of a key field?",
+    "opt1": "6",
+    "opt2": "9",
+    "opt3": "16",
+    "opt4": "19",
+    "correctAns": "16",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Which of the following are applicable for table buffering?",
+    "opt1": "The system loads all the records of the table into the buffer when one record is accessed.",
+    "opt2": "When a record of the table is accessed, all the records having this relevant field are loaded into the buffer.",
+    "opt3": "Only the records of a table that are really accessed are loaded.",
+    "opt4": "All of the above",
+    "correctAns": [
+      "All of the above"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Which table is used to store the control records for IDOC?",
+    "opt1": "EDIDD",
+    "opt2": "EDIDC",
+    "opt3": "EDIDL",
+    "opt4": "EDIDS",
+    "correctAns": "EDIDC",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "In which of the following situations could a row store table be more suitable than a column store table?",
+    "opt1": "The table contains data that you want to aggregate.",
+    "opt2": "The table contains only a small number of records.",
+    "opt3": "The table contains mainly distinct values per column across rows.",
+    "opt4": "The table contains text that you want to search.",
+    "correctAns": [
+      "The table contains only a small number of records.",
+      "The table contains text that you want to search."
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Based on Primary and Secondary key, SAP automatically creates a primary index to improve performance for transparent tables.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Which of the following can be achieved using Technical Settings?",
+    "opt1": "Optimize storage space requirements",
+    "opt2": "Table access behavior",
+    "opt3": "Buffering required",
+    "opt4": "All of the above",
+    "correctAns": "All of the above",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Which of the following are valid join types?",
+    "opt1": "Self Join",
+    "opt2": "Inner Join",
+    "opt3": "Outer Join",
+    "opt4": "All of the above",
+    "correctAns": "All of the above",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Which of the following are ways in which Standard Tables can be enhanced? (OR) Which can you use to enhance SAP standard tables and structures with fields?",
+    "opt1": "Custom include",
+    "opt2": "Direct field addition",
+    "opt3": "Append structure",
+    "opt4": "None of the options are correct",
+    "correctAns": [
+      "Custom include",
+      "Append structure"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "In which table is the status stored, when an IDOC is created?",
+    "opt1": "EDIDD (DATA RECORDS)",
+    "opt2": "EDIDC (control records)",
+    "opt3": "EDIDS (status records)",
+    "opt4": "EDIDE",
+    "correctAns": "EDIDS (status records)",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Which of the following are access strategies for tables?",
+    "opt1": "Index unique scan",
+    "opt2": "Concatenation",
+    "opt3": "Sort table scan",
+    "opt4": "Full table scan",
+    "correctAns": [
+      "Index unique scan",
+      "Concatenation",
+      "Sort table scan"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "How do you add fields to an SAP-delivered transparent table without modification?",
+    "opt1": "Use the database utility to enhance the definition on the database directly.",
+    "opt2": "Add the new fields to the table definition.",
+    "opt3": "Create an append structure containing the new fields.",
+    "opt4": "Define a structure containing the new fields and include it in the table definition.",
+    "correctAns": "Create an append structure containing the new fields.",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "When does SAP recommend that you use a full buffering type for a database table?",
+    "opt1": "When the table is very large and frequently written",
+    "opt2": "When the table is very small and frequently written",
+    "opt3": "When the table is very large and seldom written",
+    "opt4": "When the table is very small and seldom written",
+    "correctAns": "When the table is very small and seldom written",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Which of the following customer modification options are available in the table maintenance generator?",
+    "opt1": "Maintenance screens",
+    "opt2": "Events",
+    "opt3": "Search helps",
+    "opt4": "Append searches",
+    "correctAns": [
+      "Maintenance screens",
+      "Events",
+      "Search helps",
+      "Append searches"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "You want to add a field of type CURR to a transparent table. What else must you do?",
+    "opt1": "Create a new field CUKY as a predefined type",
+    "opt2": "Add a key field of type CUKY",
+    "opt3": "Create a reference to a field of type CUKY",
+    "opt4": "Add a check table that contains a field of type CUKY",
+    "correctAns": "Create a new field CUKY as a predefined type",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "In which database table type is there a one-to-one relationship between the Dictionary table definition and the relevant physical table in the database?",
+    "opt1": "Cluster table",
+    "opt2": "Pooled table",
+    "opt3": "Transparent table",
+    "opt4": "Internal table",
+    "correctAns": "Transparent table",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "You want to create a transparent table. Which of the following must you define to activate the table?",
+    "opt1": "A delivery class",
+    "opt2": "A foreign key",
+    "opt3": "The primary key",
+    "opt4": "The MANDT field",
+    "opt5": "A short description",
+    "correctAns": [
+      "A delivery class",
+      "The primary key",
+      "The MANDT field",
+      "A short description"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "You want to define a formal parameter to a subroutine that accepts only internal tables of types standard and type sorted as actual parameters. Which of the following generic ABAP data types must you use?",
+    "opt1": "Sorted table",
+    "opt2": "Standard table",
+    "opt3": "Index table",
+    "opt4": "Hashed table",
+    "correctAns": [
+      "Standard table",
+      "Sorted table"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "In the technical settings for a transparent table, buffering is switched on and single record buffering is selected. Which statement uses the buffered data assuming that the WHERE clause contains restrictions for all key fields?",
+    "opt1": "SELECT ENDSELECT.",
+    "opt2": "SELECT SINGLE.",
+    "opt3": "SELECT … INTO TABLE.",
+    "opt4": "SELECT SINGLE FOR UPDATE.",
+    "correctAns": "SELECT SINGLE.",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Which of the following transaction can you use to define transparent tables?",
+    "opt1": "SE16N",
+    "opt2": "SE38",
+    "opt3": "SE11",
+    "opt4": "SM37",
+    "correctAns": "SE11",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Which of the following can you define in the technical settings of transparent table?",
+    "opt1": "Size category",
+    "opt2": "Table name",
+    "opt3": "Data class",
+    "opt4": "Buffering type",
+    "opt5": "Delivery class",
+    "correctAns": [
+      "Size category",
+      "Data class",
+      "Buffering type",
+      "Delivery class"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "What is the SAP recommended naming convention for append structures of standard SAP tables?",
+    "opt1": "The name of the append structure must start with Z OR Y.",
+    "opt2": "The components of an append structure should start with ZZ or YY.",
+    "opt3": "The components of an append structure should start with Z or Y.",
+    "opt4": "The name of the append structure must start with ZZ or YY.",
+    "correctAns": "The name of the append structure must start with Z OR Y.",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "What is required to fully specify a Table Type in the ABAP Dictionary?",
+    "opt1": "Access type",
+    "opt2": "Table key",
+    "opt3": "Table size",
+    "opt4": "Line type",
+    "opt5": "Header line",
+    "correctAns": [
+      "Access type",
+      "Table key",
+      "Line type"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json",
+    "quizAns": [
+      "Table size",
+      "Line type",
+      "Table key"
+    ]
+  },
+  {
+    "Question": "Can we create transaction code for table maintenance?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "Yes",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Without maintaining the following, Table cannot be activated.",
+    "opt1": "Entry help/check",
+    "opt2": "Technical settings",
+    "opt3": "Primary key",
+    "correctAns": [
+      "Technical settings",
+      "Primary key"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Text table should consist of.",
+    "opt1": "All the key fields of main table",
+    "opt2": "All the fields of main table",
+    "opt3": "SPRAS field for language key",
+    "correctAns": "SPRAS field for language key",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Can we include customizing include or append structure with pooled / cluster tables?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "No",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "We need to create primary index explicitly.",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "No",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Single record buffering should be used when",
+    "opt1": "It should be used for large tables when there are few records accesses",
+    "opt2": "It should be used in large table that have frequent access to records",
+    "opt3": "It should be used for those tables where some of the fields of the table are needed",
+    "opt4": "All of the above",
+    "correctAns": "It should be used for large tables when there are few records accesses",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Pre-requisite for creating foreign key relationship is?",
+    "opt1": "The domain of foreign key and primary key of the check table should be different.",
+    "opt2": "The foreign key field and primary key of check table should the same domain",
+    "opt3": "A value table to the domain must be assigned",
+    "correctAns": "The foreign key field and primary key of check table should the same domain",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Whenever we create and activate the table below index will get automatically created",
+    "opt1": "Secondary index",
+    "opt2": "Primary index",
+    "opt3": "Unique index",
+    "opt4": "None of the above",
+    "correctAns": "Primary index",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "When we create the table, text table will automatically get created",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "False",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "We can create table maintenance with below types of screens.",
+    "opt1": "Overview screen",
+    "opt2": "Single screen",
+    "opt3": "None of the above",
+    "correctAns": [
+      "Overview screen",
+      "Single screen"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Among the below which is not the valid delivery class?",
+    "opt1": "A - application table (master & transaction data)",
+    "opt2": "C – customizing table",
+    "opt3": "T – temporary storage data",
+    "opt4": "S – system table",
+    "correctAns": "T – temporary storage data",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Transaction code for maintaining table/view (through TMG) is.",
+    "opt1": "Sm30",
+    "opt2": "Sm13",
+    "opt3": "Se30",
+    "opt4": "Sm35",
+    "correctAns": "Sm30",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "We have an option for events in table maintenance generator.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Can we create change document history (CDHDR / CDPOS entries) for custom tables?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "Yes",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "What are the check tables and value tables?",
+    "opt1": "Check table will be at field level checking.",
+    "opt2": "Value table will be at domain level checking.",
+    "opt3": "Value table will be at field level checking.",
+    "opt4": "Check table will be at domain level checking.",
+    "correctAns": [
+      "Check table will be at field level checking.",
+      "Value table will be at domain level checking."
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "It is better to buffer a table when",
+    "opt1": "When a table is read infrequently",
+    "opt2": "When a table is linked to check tables",
+    "opt3": "When a table is read frequently, and the data seldom changes",
+    "opt4": "When a single record is to be picked up",
+    "correctAns": "When a table is read frequently, and the data seldom changes",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Full Buffering would be appropriate for",
+    "opt1": "Transaction Tables",
+    "opt2": "Small Static tables",
+    "opt3": "Internal Tables",
+    "opt4": "Tables with generic Keys",
+    "correctAns": "Small Static tables",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "What is the Cardinality for the Node created for storing the Table?",
+    "opt1": "1:1",
+    "opt2": "0:1",
+    "opt3": "n:n",
+    "opt4": "0:n",
+    "correctAns": "1:1",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Custom table names must begin with a Z and are restricted to 16 characters. Is this a true or a false statement?",
+    "opt1": "True",
+    "opt2": "False (It can start with Y also)",
+    "correctAns": "False (It can start with Y also)",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "The table that is referenced by the foreign key (in our example, YCUSTOMERS) is called the check table (table having primary key). State whether the statement is true or false.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "The check table is also known as:",
+    "opt1": "Dependent table",
+    "opt2": "Parent table",
+    "opt3": "Child table",
+    "opt4": "Referenced table",
+    "opt5": "primary key table",
+    "correctAns": "Parent table",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Versions of an object that can exist in the ABAP dictionary?",
+    "opt1": "Modifiable",
+    "opt2": "Active",
+    "correctAns": [
+      "Modifiable",
+      "Active"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Multiple inheritance can be achieved in ABAP?",
+    "opt1": "True (through interface)",
+    "opt2": "False",
+    "correctAns": "True (through interface)",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "What is mandatory for the creation of table maintenance generator?",
+    "opt1": "Function group",
+    "correctAns": "Function group",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Buffering is recommended for tables with data typically that does change or gets updated frequently",
+    "opt1": "False",
+    "opt2": "True",
+    "correctAns": "False",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Material master data and its description is stored in the table.",
+    "opt1": "MARA-MARKT",
+    "opt2": "SPFLI",
+    "opt3": "SFLIGHT",
+    "correctAns": "MARA-MARKT",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "You define a formal parameter to a subroutine that accepts only internal table of type standard and type sorted as actual parameters. Which of the following generic ABAP data types must you use?",
+    "opt1": "Hashed table",
+    "opt2": "Standard table",
+    "opt3": "Index table",
+    "opt4": "Sorted table",
+    "correctAns": "Standard table",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json",
+    "quizAns": [
+      "Index table"
+    ]
+  },
+  {
+    "Question": "Max Number of Primary Index in Transparent table?",
+    "opt1": "1",
+    "opt2": "4",
+    "opt3": "6",
+    "correctAns": "1",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json",
+    "quizAns": [
+      "4"
+    ]
+  },
+  {
+    "Question": "Max Number of Secondary Index in Transparent table?",
+    "opt1": "1",
+    "opt2": "4",
+    "opt3": "6",
+    "correctAns": "6",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Which of the following are ways in which Standard Tables can be enhanced?",
+    "opt1": "Custom include",
+    "opt2": "Direct field addition",
+    "opt3": "Append structure",
+    "correctAns": [
+      "Custom include",
+      "Append structure"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json",
+    "quizAns": [
+      "Custom include",
+      "Append structure"
+    ]
+  },
+  {
+    "Question": "Which table type would be most appropriate for accessing table rows using an index?",
+    "opt1": "Hashed table",
+    "opt2": "Standard table",
+    "opt3": "Sorted table",
+    "opt4": "None of these may be accessed using an index.",
+    "correctAns": "Hashed table",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "When creating a transparent table in the ABAP Dictionary, which step automatically creates the table in the underlying database?",
+    "opt1": "Adding technical settings to the table",
+    "opt2": "Checking the table syntax",
+    "opt3": "Saving the table",
+    "opt4": "Activating the table",
+    "correctAns": "Activating the table",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "A dictionary table is made available for use within an ABAP program via the TABLES statement.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Name the type of ABAP Dictionary table that has these characteristics: Same number of fields as the database table, Same name as database table and Maps 1:1 to database table",
+    "opt1": "Pooled",
+    "opt2": "Cluster",
+    "opt3": "Transparent",
+    "opt4": "View",
+    "correctAns": "Transparent",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "If a table does not have MANDT as part of the primary key, it is.",
+    "opt1": "A structure",
+    "opt2": "Invalid",
+    "opt3": "Client-independent",
+    "opt4": "Not mandatory",
+    "correctAns": "Client-independent",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "How many types of tables exist in data dictionary? (Multiple Answer)",
+    "opt1": "Transparent tables",
+    "opt2": "Internal Table",
+    "opt3": "Pool tables",
+    "opt4": "Hash Table",
+    "opt5": "Cluster tables",
+    "opt6": "Master Data Table",
+    "correctAns": [
+      "Transparent tables",
+      "Pool tables",
+      "Cluster tables"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/QuestionBank.json"
+  },
+  {
+    "Question": "Which components belong to an elementary search help? (Choose two)",
+    "opt1": "Fixed values",
+    "opt2": "Import / export parameters",
+    "opt3": "Selection method",
+    "opt4": "Attachment to a field",
+    "correctAns": [
+      "Fixed values",
+      "Selection method"
+    ],
+    "resource": "https://help.sap.com/viewer/cc88f18b833f4e1b9c5d7c63a0283e36/1909.000/en-US/0809a4e9b2ad47f39a1d0758c92f2677.html",
+    "proposedAns": "",
+    "sourceTopic": "files/SearchHelpQuestions.json"
+  },
+  {
+    "Question": "Which must a search help do?",
+    "opt1": "Use a table or a view for data selection",
+    "opt2": "Determine the values for selection by the user",
+    "opt3": "Allow the user to select a response",
+    "opt4": "Have a dialog with the user",
+    "correctAns": [
+      "Allow the user to select a response"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/SearchHelpQuestions.json"
+  },
+  {
+    "Question": "Search help is assigned to which level of table?",
+    "opt1": "Field",
+    "opt2": "Domain",
+    "opt3": "Data element",
+    "opt4": "None of the above",
+    "correctAns": "Field",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/SearchHelpQuestions.json"
+  },
+  {
+    "Question": "Which of the following can you assign a search help to?",
+    "opt1": "Table",
+    "opt2": "Data element",
+    "opt3": "Domain",
+    "opt4": "Table Type",
+    "correctAns": [
+      "Data element",
+      "Structure component"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/SearchHelpQuestions.json"
+  },
+  {
+    "Question": "We can assign search help to select option or parameter using?",
+    "opt1": "Match code object",
+    "opt2": "Batch code object",
+    "opt3": "User command",
+    "opt4": "None of the above",
+    "correctAns": "Match code object",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/SearchHelpQuestions.json"
+  },
+  {
+    "Question": "Search help cannot be attached to:",
+    "opt1": "Domain",
+    "opt2": "Field of a table",
+    "opt3": "Check table",
+    "opt4": "Table Type",
+    "correctAns": [
+      "Domain",
+      "Table Type"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/SearchHelpQuestions.json"
+  },
+  {
+    "Question": "What does not determine the behavior of the search help?",
+    "opt1": "User master record parameters",
+    "opt2": "Search help configuration",
+    "opt3": "Field attachment",
+    "opt4": "Selection method",
+    "correctAns": "User master record parameters",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/SearchHelpQuestions.json"
+  },
+  {
+    "Question": "What are types of search helps in data dictionary?",
+    "opt1": "Elementary",
+    "opt2": "Secondary",
+    "opt3": "Collection",
+    "opt4": "Collective",
+    "correctAns": [
+      "Elementary",
+      "Collective"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/SearchHelpQuestions.json"
+  },
+  {
+    "Question": "What must be assigned to search help parameters?",
+    "opt1": "Domain",
+    "opt2": "Data element",
+    "opt3": "Table",
+    "opt4": "Field",
+    "correctAns": "Data element",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/SearchHelpQuestions.json"
+  },
+  {
+    "Question": "What is the recommended method to modify a standard search help to include customer defined search paths?",
+    "opt1": "Add an elementary search help to the standard search help",
+    "opt2": "Enhance the standard search help with an append search help",
+    "opt3": "Add a collective search help to the standard search help",
+    "opt4": "Perform a modification to the standard search help",
+    "correctAns": "Enhance the standard search help with an append search help",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/SearchHelpQuestions.json"
+  },
+  {
+    "Question": "Which of the following data types are predefined ABAP data types?",
+    "opt1": "DECFLOAT34",
+    "opt2": "String",
+    "opt3": "XString",
+    "opt4": "Float",
+    "opt5": "Decimals",
+    "correctAns": [
+      "DECFLOAT34",
+      "XString",
+      "Float"
+    ],
+    "resource": "help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": [
+      "XString",
+      "Float"
+    ],
+    "isDoubt": false,
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "What is the internal date format in SAP?",
+    "opt1": "YYYYMMDD",
+    "opt2": "DDMMYYYY",
+    "opt3": "MMDDYYYY",
+    "opt4": "YYYYDDMM",
+    "correctAns": [
+      "YYYYMMDD"
+    ],
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": [
+      "YYYYMMDD",
+      "DDMMYYYY"
+    ],
+    "quizAns": [
+      "YYYYMMDD"
+    ],
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "What happens when the DELETE DATASET statement is used?",
+    "opt1": "A file is physically deleted",
+    "opt2": "A file is logically deleted",
+    "opt3": "Both A and B",
+    "opt4": "None of the above",
+    "correctAns": [
+      "A file is physically deleted"
+    ],
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": [
+      "A file is physically deleted",
+      "A file is logically deleted",
+      "Both A and B"
+    ],
+    "isDoubt": true,
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "Which data type has the default length of the blank default value?",
+    "opt1": "1",
+    "opt2": "N",
+    "opt3": "C",
+    "opt4": "D",
+    "correctAns": [
+      "C"
+    ],
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": [
+      "C"
+    ],
+    "isDoubt": true,
+    "quizAns": [
+      "C"
+    ],
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "Which field should be a part of table for it to be client dependent?",
+    "opt1": "MATNR",
+    "opt2": "MANDT",
+    "opt3": "VBELN",
+    "opt4": "MBLNR",
+    "correctAns": "MANDT",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": [
+      "MANDT"
+    ],
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "The number of decimal places for output can be defined within a WRITE statement.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "True",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": [
+      "True"
+    ],
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "Which among the following are valid predefined data types in ABAP?",
+    "opt1": "P",
+    "opt2": "X",
+    "opt3": "Decfloat16",
+    "opt4": "All of the above",
+    "correctAns": "All of the above",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": [
+      "All of the above"
+    ],
+    "quizAns": [
+      "All of the above"
+    ],
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "Where are semantic characteristics of a field defined?",
+    "opt1": "Domain",
+    "opt2": "Data Element",
+    "opt3": "Reference Field",
+    "correctAns": "Data Element",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "Can you create a table with fields not referring to data elements?",
+    "opt1": "Yes",
+    "opt2": "No",
+    "correctAns": "Yes",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "quizAns": [
+      "No"
+    ],
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "Which of the following predefined ABAP types is incomplete?",
+    "opt1": "F",
+    "opt2": "P",
+    "opt3": "XSTRING",
+    "opt4": "STRING",
+    "correctAns": "STRING",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "quizAns": [
+      "XSTRING"
+    ],
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "Data element is an example of",
+    "opt1": "Physical Definition",
+    "opt2": "Business Object",
+    "opt3": "Semantic Domain",
+    "opt4": "Technical Domain",
+    "correctAns": "Semantic Domain",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "Which of the following ABAP standard types are incomplete?",
+    "opt1": "F",
+    "opt2": "N",
+    "opt3": "X",
+    "opt4": "STRING",
+    "correctAns": "STRING",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "quizAns": [
+      "F"
+    ],
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "You define a generic variable that can hold the ABAP types C, D, N, STRING, and T. You want to restrict the use of other ABAP types. Which generic data type must you use in the definition?",
+    "opt1": "CLIKE",
+    "opt2": "SIMPLE",
+    "opt3": "DATA",
+    "opt4": "CSEQUENCE",
+    "correctAns": "CLIKE",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "Which of the following Data Types are allowed in ABAP? (Choose two)",
+    "opt1": "DECFLOAT64",
+    "opt2": "DECFLOAT16",
+    "opt3": "DECFLOAT34",
+    "opt4": "DECFLOAT32",
+    "correctAns": [
+      "DECFLOAT16",
+      "DECFLOAT34"
+    ],
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "quizAns": [
+      "DECFLOAT64",
+      "DECFLOAT34"
+    ],
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "We provide reference table and reference field to which type of fields?",
+    "opt1": "DECIMAL",
+    "opt2": "CURRENCY",
+    "opt3": "QUANTITY",
+    "correctAns": "DECIMAL",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "quizAns": [
+      "QUANTITY"
+    ],
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "Which are not predefined data types in ABAP?",
+    "opt1": "X",
+    "opt2": "P",
+    "opt3": "T",
+    "opt4": "W",
+    "correctAns": "T",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "proposedAns": "",
+    "quizAns": [
+      "W"
+    ],
+    "sourceTopic": "files/Test.json"
+  },
+  {
+    "Question": "Which of the following views can be used to write on multiple tables?",
+    "opt1": "Database view",
+    "opt2": "Projection view",
+    "opt3": "Maintenance view",
+    "opt4": "Help view",
+    "correctAns": "Maintenance view",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/ViewsQuestions.json"
+  },
+  {
+    "Question": "How many tables draw a projection view?",
+    "opt1": "1",
+    "opt2": "2",
+    "opt3": "3",
+    "correctAns": "1",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/ViewsQuestions.json"
+  },
+  {
+    "Question": "What is true.",
+    "opt1": "A view contains data",
+    "opt2": "Views can be buffered",
+    "opt3": "Views cannot be buffered",
+    "opt4": "None of above",
+    "correctAns": "Views cannot be buffered",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/ViewsQuestions.json"
+  },
+  {
+    "Question": "One of the disadvantages of CDS views is that it cannot be reused.",
+    "opt1": "True",
+    "opt2": "False",
+    "correctAns": "False",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/ViewsQuestions.json"
+  },
+  {
+    "Question": "Which of the following is a conditional expression in CDS view?",
+    "opt1": "CASE",
+    "opt2": "IF",
+    "opt3": "FOR",
+    "correctAns": "CASE",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/ViewsQuestions.json"
+  },
+  {
+    "Question": "Which view types can you use to join two tables with an outer join?",
+    "opt1": "Maintenance view",
+    "opt2": "Database view",
+    "opt3": "Projection view",
+    "opt4": "Help view",
+    "correctAns": "Maintenance view",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/ViewsQuestions.json"
+  },
+  {
+    "Question": "You define a database view A and a maintenance view B in the ABAP dictionary. What restrictions apply to these views?",
+    "opt1": "Only B can have either a left outer join or an inner join.",
+    "opt2": "The tables joined in B must have foreign key relationships.",
+    "opt3": "Only A can be used in the FROM clause of a SELECT statement.",
+    "opt4": "The tables joined in A must have foreign key relationships",
+    "correctAns": "The tables joined in B must have foreign key relationships.",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/ViewsQuestions.json"
+  },
+  {
+    "Question": "What type of ABAP Dictionary view is implemented as an “INNER JOIN”?",
+    "opt1": "Maintenance View",
+    "opt2": "Help View",
+    "opt3": "Database View",
+    "opt4": "Projection View",
+    "correctAns": "Database View",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/ViewsQuestions.json",
+    "quizAns": [
+      "Database View"
+    ]
+  },
+  {
+    "Question": "What does a view do?",
+    "opt1": "Contains other views",
+    "opt2": "Can be contained in a window",
+    "opt3": "Contains a view controller",
+    "opt4": "Contains windows",
+    "opt5": "If entered by an inbound plug, can cause an event handler method to be called",
+    "correctAns": "Contains other views",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/ViewsQuestions.json"
+  },
+  {
+    "Question": "Difference between projection view and database view.",
+    "opt1": "Projection view can be created using one or more table and database view be created using single table",
+    "opt2": "Projection view be created using a single table and database view can be created using one or more table",
+    "opt3": "None of the above",
+    "correctAns": "Projection view be created using a single table and database view can be created using one or more table",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/ViewsQuestions.json"
+  },
+  {
+    "Question": "What is true about views? More than one answer is correct.",
+    "opt1": "A view is automatically created on the database upon activation",
+    "opt2": "A view contains data",
+    "opt3": "Maintenance Views are not updateable",
+    "opt4": "Views can be buffered",
+    "correctAns": [
+      "A view is automatically created on the database upon activation",
+      "Maintenance Views are not updateable"
+    ],
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/ViewsQuestions.json"
+  },
+  {
+    "Question": "The ____ type of ABAP Dictionary view consists of one or more transparent tables and may be accessed by an ABAP program using Open SQL.",
+    "opt1": "Database view",
+    "opt2": "Projection view",
+    "opt3": "Help view",
+    "opt4": "Entity view",
+    "correctAns": "Database view",
+    "resource": "https://help.sap.com/viewer/cb890f38e48f4b6090987452ea9e9d0a/1909.000/en-US/6e5f6c13eb9c4cdd88e540697ca87e8f.html",
+    "proposedAns": "",
+    "sourceTopic": "files/ViewsQuestions.json"
+  }
+]

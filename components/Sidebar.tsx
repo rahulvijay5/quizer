@@ -7,6 +7,15 @@ import { ScrollArea } from "./ui/scroll-area";
 import { cn } from "@/lib/utils";
 import { filesFormated } from "@/lib/constants";
 import {
+  Command,
+  CommandDialog,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "./ui/command";
+import {
   DropdownMenu,
   DropdownMenuTrigger,
   DropdownMenuContent,
@@ -26,15 +35,25 @@ import {
   PlusCircle,
   Upload,
   HeartHandshake,
+  Search,
 } from "lucide-react";
 import { Separator } from "./ui/separator";
+import { useHotkeys } from "react-hotkeys-hook";
 
 export default function Sidebar() {
   const [files, setFiles] = useState<string[]>([]);
   const [selectedFile, setSelectedFile] = useState<string>("");
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const pathname = usePathname();
   const mode = pathname === "/quiz" ? "Quiz Mode" : "Modify Mode";
   const router = useRouter();
+
+  // Add keyboard shortcuts
+  useHotkeys('mod+k', (e) => {
+    e.preventDefault();
+    setSearchOpen(true);
+  });
 
   useEffect(() => {
     const loadFiles = async () => {
@@ -62,7 +81,15 @@ export default function Sidebar() {
     setSelectedFile(file);
     const event = new CustomEvent("topicChange", { detail: file });
     window.dispatchEvent(event);
+    setSearchOpen(false);
   };
+
+  // Filter files based on search query
+  const filteredFiles = files.filter(file => {
+    const name = filesFormated.find(f => f.filename === file)?.name || 
+                 file.replace('files/', '').replace('.json', '');
+    return name.toLowerCase().includes(searchQuery.toLowerCase());
+  });
 
   const handleCompleteTest = async () => {
     try {
@@ -91,45 +118,49 @@ export default function Sidebar() {
   return (
     <div className="w-64 border-r flex flex-col justify-between h-[calc(100vh-5rem)]">
       <div className="p-4 border-b w-full">
-        <DropdownMenu>
-          <DropdownMenuTrigger className="w-full">
-            <h1 className="font-semibold text-lg text-left">{mode}</h1>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-full gap-2">
-            <DropdownMenuItem className="flex items-center gap-2 justify-start">
-              <FileQuestion className="h-4 w-4" />
-              <Link href="/quiz" className="font-semibold">
-                Quiz
-              </Link>
-            </DropdownMenuItem>
-
-            <DropdownMenuItem className="flex items-center gap-2 justify-start">
-              <PencilIcon className="h-4 w-4" />
-              <Link href="/modify" className="font-semibold">
-                Modify
-              </Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem className="flex items-center gap-2 justify-start">
-              <FileText className="h-4 w-4" />
-              <Link href="/read" className="font-semibold">
-                Read
-              </Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem className="flex items-center gap-2 justify-start">
-              <MessageCircleQuestionIcon className="h-4 w-4" />
-              <Link href="/doubts" className="font-semibold">
-                Doubts
-              </Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem className="flex items-center gap-2 justify-start">
-              <PlusCircle className="h-4 w-4" />
-              <Link href="/create" className="font-semibold">
-                Create
-              </Link>
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <div className="flex items-center justify-between mb-4">
+          <DropdownMenu>
+            <DropdownMenuTrigger className="w-full">
+              <h1 className="font-semibold text-lg text-left">{mode}</h1>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-full gap-2">
+              <DropdownMenuItem className="flex items-center gap-2 justify-start">
+                <FileQuestion className="h-4 w-4" />
+                <Link href="/quiz" className="font-semibold">Quiz</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="flex items-center gap-2 justify-start">
+                <PencilIcon className="h-4 w-4" />
+                <Link href="/modify" className="font-semibold">Modify</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="flex items-center gap-2 justify-start">
+                <FileText className="h-4 w-4" />
+                <Link href="/read" className="font-semibold">Read</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="flex items-center gap-2 justify-start">
+                <MessageCircleQuestionIcon className="h-4 w-4" />
+                <Link href="/doubts" className="font-semibold">Doubts</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="flex items-center gap-2 justify-start">
+                <PlusCircle className="h-4 w-4" />
+                <Link href="/create" className="font-semibold">Create</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+          <Button variant="ghost" size="icon" onClick={() => setSearchOpen(true)}>
+            <Search className="h-4 w-4" />
+          </Button>
+        </div>
+        <div className="relative">
+          <input
+            type="text"
+            placeholder="Search topics..."
+            className="w-full px-3 py-2 text-sm rounded-md border bg-background"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+        </div>
       </div>
+
       <ScrollArea className="h-full">
         <div className="p-4 space-y-2">
           {mode === "Quiz Mode" && (
@@ -141,12 +172,12 @@ export default function Sidebar() {
               Start Complete Test
             </Button>
           )}
-          {files.map((file) => (
+          {filteredFiles.map((file) => (
             <Button
               key={file}
               variant="ghost"
               className={cn(
-                "w-full justify-start text-left font-normal ",
+                "w-full justify-start text-left font-normal",
                 selectedFile === file && "bg-gray-100 dark:text-black"
               )}
               onClick={() => handleFileSelect(file)}
@@ -183,13 +214,32 @@ export default function Sidebar() {
           </Button>
         </Link>
         <Separator />
-        <div className="pt-2 px-2 text-xs text-muted-foreground flex items-center justify-between">
-          <span>Created by Rahul</span>
           <Link href="https://github.com/rahulvijay5/quizer" target="_blank">
+        <div className="pt-2 px-2 text-xs text-muted-foreground hover:underline hover:text-blue-500 flex items-center justify-between">
+          <span>Created by Rahul</span>
             <GithubIcon className="h-4 w-4" />
-          </Link>
         </div>
+          </Link>
       </div>    
+
+      <CommandDialog open={searchOpen} onOpenChange={setSearchOpen}>
+        <CommandInput placeholder="Search topics..." />
+        <CommandList>
+          <CommandEmpty>No topics found.</CommandEmpty>
+          <CommandGroup heading="Topics">
+            {files.map((file) => (
+              <CommandItem
+                key={file}
+                onSelect={() => handleFileSelect(file)}
+              >
+                <FileText className="h-4 w-4 mr-2" />
+                {filesFormated.find((f) => f.filename === file)?.name ||
+                 file.replace("files/", "").replace(".json", "")}
+              </CommandItem>
+            ))}
+          </CommandGroup>
+        </CommandList>
+      </CommandDialog>
     </div>
   );
 }

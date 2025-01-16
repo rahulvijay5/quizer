@@ -503,21 +503,60 @@ export default function QuestionView({ mode }: QuestionViewProps) {
     return options;
   };
 
-  // Add auto-save functionality
-  useEffect(() => {
-    if (mode === "modify" && currentQuestion && selectedAnswers.length > 0) {
-      const timer = setTimeout(() => {
-        const updatedQuestions = [...questions];
-        updatedQuestions[currentQuestionIndex] = {
-          ...currentQuestion,
-          [answerType]: isMultiSelect ? selectedAnswers : [selectedAnswers[0]],
-        };
-        saveQuestions(updatedQuestions);
-      }, 1000); // Auto-save after 1 second of inactivity
+  const handleOptionSelect = (optionIndex: number) => {
+    if (!currentQuestion) return;
+    
+    const isMultipleChoice = Array.isArray(currentQuestion.correctAns) && currentQuestion.correctAns.length > 1;
+    const optionIndexStr = optionIndex.toString();
+    
+    if (mode === "modify") {
+      const currentAnswers = Array.isArray(currentQuestion.proposedAns) 
+        ? currentQuestion.proposedAns 
+        : [currentQuestion.proposedAns];
 
-      return () => clearTimeout(timer);
+      let newAnswers: string[];
+      if (isMultipleChoice) {
+        // Toggle the selected option
+        newAnswers = currentAnswers.includes(optionIndexStr)
+          ? currentAnswers.filter(ans => ans !== optionIndexStr)
+          : [...currentAnswers, optionIndexStr].sort();
+      } else {
+        // Single choice - replace the answer
+        newAnswers = [optionIndexStr];
+      }
+
+      setQuestions(prev => prev.map((q, i) => 
+        i === currentQuestionIndex
+          ? { ...q, proposedAns: newAnswers.length === 1 ? newAnswers[0] : newAnswers }
+          : q
+      ));
+
+      // Save after updating
+      saveQuestions();
+    } else {
+      // Quiz mode
+      const currentAnswers = Array.isArray(currentQuestion.quizAns) 
+        ? currentQuestion.quizAns 
+        : currentQuestion.quizAns ? [currentQuestion.quizAns] : [];
+
+      let newAnswers: string[];
+      if (isMultipleChoice) {
+        // Toggle the selected option
+        newAnswers = currentAnswers.includes(optionIndexStr)
+          ? currentAnswers.filter(ans => ans !== optionIndexStr)
+          : [...currentAnswers, optionIndexStr].sort();
+      } else {
+        // Single choice - replace the answer
+        newAnswers = [optionIndexStr];
+      }
+
+      setQuestions(prev => prev.map((q, i) => 
+        i === currentQuestionIndex
+          ? { ...q, quizAns: newAnswers.length === 1 ? newAnswers[0] : newAnswers }
+          : q
+      ));
     }
-  }, [selectedAnswers, currentQuestionIndex, answerType, isMultiSelect]);
+  };
 
   if (!currentQuestion) {
     return (
@@ -728,9 +767,18 @@ export default function QuestionView({ mode }: QuestionViewProps) {
         <div className="flex justify-between items-center gap-8">
           <Button
             variant="outline"
-            onClick={() =>
-              setCurrentQuestionIndex((prev) => Math.max(0, prev - 1))
-            }
+            onClick={() => {
+              if (mode === "modify") {
+                // Save current question before navigating
+                const updatedQuestions = [...questions];
+                updatedQuestions[currentQuestionIndex] = {
+                  ...currentQuestion,
+                  [answerType]: isMultiSelect ? selectedAnswers : [selectedAnswers[0]],
+                };
+                saveQuestions(updatedQuestions);
+              }
+              setCurrentQuestionIndex((prev) => Math.max(0, prev - 1));
+            }}
             disabled={currentQuestionIndex === 0}
           >
             <ChevronLeftIcon className="w-4 h-4" />
@@ -742,13 +790,18 @@ export default function QuestionView({ mode }: QuestionViewProps) {
               <h1 className="text-sm text-muted-foreground">
                 Resource:
               </h1>
-              <input
-                type="text"
-                value={resource}
-                onChange={(e) => handleResourceChange(e.target.value)}
-                className="w-full p-2 border rounded"
-                placeholder="Enter resource URL"
-              />
+              <div className="w-full relative">
+                <input
+                  type="text"
+                  value={resource}
+                  onChange={(e) => handleResourceChange(e.target.value)}
+                  className="w-full p-2 border rounded"
+                  placeholder="Enter resource URL or text reference"
+                />
+                <p className="absolute -bottom-5 left-0 text-xs text-muted-foreground">
+                  Can be a URL or descriptive text
+                </p>
+              </div>
             </div>
           ) : (
             <div className="flex gap-4 w-full">
@@ -773,7 +826,16 @@ export default function QuestionView({ mode }: QuestionViewProps) {
           )}
 
           <Button
-            onClick={() =>
+            onClick={() => {
+              if (mode === "modify") {
+                // Save current question before navigating
+                const updatedQuestions = [...questions];
+                updatedQuestions[currentQuestionIndex] = {
+                  ...currentQuestion,
+                  [answerType]: isMultiSelect ? selectedAnswers : [selectedAnswers[0]],
+                };
+                saveQuestions(updatedQuestions);
+              }
               setCurrentQuestionIndex((prev) =>
                 Math.min(
                   (mode === "quiz" && quizState.isActive
@@ -781,8 +843,8 @@ export default function QuestionView({ mode }: QuestionViewProps) {
                     : questions.length) - 1,
                   prev + 1
                 )
-              )
-            }
+              );
+            }}
             disabled={
               currentQuestionIndex ===
               (mode === "quiz" && quizState.isActive

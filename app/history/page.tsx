@@ -7,6 +7,18 @@ import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { filesFormated } from '@/lib/constants'
 import { Separator } from '@/components/ui/separator'
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
+import { toast } from "sonner"
 
 interface QuizResult {
   question: {
@@ -79,6 +91,23 @@ export default function HistoryPage() {
     }
   }
 
+  const handleReset = async () => {
+    try {
+      const response = await fetch('/api/quiz-history', {
+        method: 'DELETE',
+      });
+      
+      if (!response.ok) throw new Error('Failed to reset history');
+      
+      toast.success('Quiz history has been reset');
+      // Refresh the page to show empty history
+      window.location.reload();
+    } catch (error) {
+      toast.error('Failed to reset history');
+      console.error('Error resetting history:', error);
+    }
+  };
+
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
@@ -92,10 +121,29 @@ export default function HistoryPage() {
   return (
     <div className="container mx-auto py-8 px-4">
       <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold">Quiz History</h1>
-        <Link href="/">
-          <Button>Back to Home</Button>
-        </Link>
+        <h1 className="text-3xl font-bold">Your Quiz History</h1>
+        <div className="flex gap-4">
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button variant="destructive">Reset History</Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+                <AlertDialogDescription>
+                  This action cannot be undone. This will permanently delete your quiz history.
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction onClick={handleReset}>Reset</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
+          <Link href="/">
+            <Button>Back to Home</Button>
+          </Link>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

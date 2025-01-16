@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <div className="container mx-auto py-8 px-4 max-w-4xl">
       <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold">About SAP Quiz Platform</h1>
+        <h1 className="text-3xl font-bold">About Quizer</h1>
         <Link href="/">
           <Button>Back to Home</Button>
         </Link>
@@ -17,9 +17,9 @@ export default function AboutPage() {
 
       <div className="space-y-8">
         <Card className="p-6">
-          <h2 className="text-2xl font-semibold mb-4">What is SAP Quiz Platform?</h2>
+          <h2 className="text-2xl font-semibold mb-4">What is Quizer?</h2>
           <p className="text-muted-foreground mb-4">
-            SAP Quiz Platform is an open-source application designed to help SAP professionals and enthusiasts test and improve their knowledge. The platform offers a comprehensive collection of questions covering various SAP topics, from data types to views and domains.
+            Quizer is an open-source application designed to help SAP professionals and enthusiasts test and improve their knowledge. The platform offers a comprehensive collection of questions covering various SAP topics, from data types to views and domains.
           </p>
           <p className="text-muted-foreground">
             Whether you're preparing for certification or just want to brush up on your SAP knowledge, this platform provides an interactive way to learn and practice.

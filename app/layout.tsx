@@ -7,6 +7,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
 import { useState, useEffect } from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,13 @@ export default function RootLayout({
 }) {
   const [showSidebar, setShowSidebar] = useState(true)
   const [isQuizActive, setIsQuizActive] = useState(false)
+
+  // Add keyboard shortcut for toggling sidebar
+  useHotkeys('mod+\\', () => {
+    if (!isQuizActive) {
+      setShowSidebar(prev => !prev)
+    }
+  })
 
   useEffect(() => {
     const handleQuizStateChange = ((event: CustomEvent) => {
@@ -38,13 +46,13 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="bg-background">
-            {/* <Navbar toggleSidebar={() => setShowSidebar(!showSidebar)} /> */}
-            {/* <div className="flex"> */}
-              {/* {showSidebar && !isQuizActive && <Sidebar />} */}
-              {/* <main className="flex-1"> */}
+            {/* <Navbar toggleSidebar={() => setShowSidebar(!showSidebar)} />
+            <div className="flex">
+              {showSidebar && !isQuizActive && <Sidebar />}
+              <main className="flex-1"> */}
                 {children}
-              {/* </main> */}
-            {/* </div> */}
+              {/* </main>
+            </div> */}
           </div>
           <Toaster />
         </ThemeProvider>

@@ -74,4 +74,18 @@ export async function POST(request: Request) {
     console.error('Error saving quiz history:', error)
     return NextResponse.json({ error: 'Failed to save quiz history' }, { status: 500 })
   }
+}
+
+export async function DELETE() {
+  try {
+    const filePath = path.join(process.cwd(), HISTORY_FILE)
+    
+    // Create an empty history file
+    await fs.writeFile(filePath, JSON.stringify({ quizzes: [] }))
+    
+    return NextResponse.json({ message: 'History reset successfully' })
+  } catch (error) {
+    console.error('Error resetting history:', error)
+    return NextResponse.json({ error: 'Failed to reset history' }, { status: 500 })
+  }
 } 
