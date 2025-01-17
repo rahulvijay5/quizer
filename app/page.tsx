@@ -14,6 +14,9 @@ import {
   Database,
   CloudOff,
   PlusCircle,
+  UploadCloudIcon,
+  UploadIcon,
+  LucideUpload,
 } from "lucide-react";
 import { TooltipContent, TooltipTrigger, TooltipProvider, Tooltip } from "@/components/ui/tooltip";
 import ModeToggle from "@/components/ModeToggle";
@@ -33,7 +36,24 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[120px]">
-          <Link href="/quiz" className="md:col-span-2">
+        <div className="md:col-span-2 flex gap-4 w-full">
+            
+            <Link
+              href="/upload"
+              className="flex justify-between items-center hover:border-primary/50 transition-colors"
+            >
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <LucideUpload className="h-20 w-20 p-4 text-primary self-center border-8 rounded-full border-r-emerald-400 border-t-0 border-b-0 border-l-0" />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    Upload Questions
+                  </TooltipContent>
+                </Tooltip>
+                </TooltipProvider>
+            </Link>
+            <Link href="/quiz" className="md:col-span-2 w-full">
             <Card className="p-6 h-full hover:border-primary/50 transition-colors">
               <div className="flex items-start justify-between h-full">
                 <FileQuestion className="h-8 w-8 mb-4 text-primary" />
@@ -46,6 +66,7 @@ export default function Home() {
               </div>
             </Card>
           </Link>
+          </div>
 
           <Link href="/modify" className="md:row-span-2">
             <Card className="p-6 h-full hover:border-primary/50 transition-colors row-span-2 flex justify-between">

@@ -19,12 +19,34 @@ export async function POST(request: NextRequest) {
     const bytes = await file.arrayBuffer()
     const buffer = Buffer.from(bytes)
 
-    // Validate JSON structure
+    // Validate JSON structure and normalize format
+    let questions;
     try {
       const content = JSON.parse(buffer.toString())
-      if (!content.questions || !Array.isArray(content.questions)) {
+      
+      // Check if it's a direct array or nested under 'questions'
+      if (Array.isArray(content)) {
+        questions = content;
+      } else if (content.questions && Array.isArray(content.questions)) {
+        questions = content.questions;
+      } else {
         return NextResponse.json(
-          { error: 'Invalid JSON structure. Must contain a questions array.' },
+          { error: 'Invalid JSON structure. Must be an array of questions or contain a questions array.' },
+          { status: 400 }
+        )
+      }
+
+      // Validate that each question has the required fields
+      const isValid = questions.every((q: any) => 
+        q.Question && 
+        q.opt1 && 
+        q.correctAns && 
+        (Array.isArray(q.correctAns) || typeof q.correctAns === 'string')
+      );
+
+      if (!isValid) {
+        return NextResponse.json(
+          { error: 'Invalid question format. Each question must have Question, options, and correctAns fields.' },
           { status: 400 }
         )
       }
@@ -39,8 +61,8 @@ export async function POST(request: NextRequest) {
     const filename = topicName.toLowerCase().replace(/[^a-z0-9]/g, '-') + '.json'
     const filePath = path.join(process.cwd(), 'files', filename)
 
-    // Save file
-    await writeFile(filePath, buffer)
+    // Save file with normalized format
+    await writeFile(filePath, JSON.stringify(questions, null, 2))
 
     // Update constants file
     const constantsPath = path.join(process.cwd(), 'lib', 'constants.ts')
