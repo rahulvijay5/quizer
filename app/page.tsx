@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import {
@@ -11,12 +10,10 @@ import {
   HeartHandshake,
   History,
   Github,
-  Database,
   CloudOff,
   PlusCircle,
-  UploadCloudIcon,
-  UploadIcon,
   LucideUpload,
+  Pen,
 } from "lucide-react";
 import { TooltipContent, TooltipTrigger, TooltipProvider, Tooltip } from "@/components/ui/tooltip";
 import ModeToggle from "@/components/ModeToggle";
@@ -124,15 +121,25 @@ export default function Home() {
             </Card>
           </Link>
 
-          <Link href="https://github.com/rahulvijay5/quizer" target="_blank">
+          <div className="flex gap-4 w-full">
+          <Link href="https://github.com/rahulvijay5/quizer" target="_blank" className="w-full">
             <Card className="p-6 h-full hover:border-primary/50 transition-colors">
               <Github className="h-8 w-8 mb-4 text-primary" />
               <div className="flex items-center justify-between">
                 <h2 className="text-lg font-semibold">Open Source</h2>
-                <p className="text-sm text-muted-foreground">View on GitHub</p>
               </div>
             </Card>
           </Link>
+          <Link href="/notes" target="_blank" className="w-full">
+            <Card className="p-6 h-full hover:border-primary/50 transition-colors">
+              <Pen className="h-8 w-8 mb-4 text-primary" />
+              <div className="flex items-center justify-between">
+                <h2 className="text-lg font-semibold">Notes</h2>
+              </div>
+            </Card>
+          </Link>
+          </div>
+
 
           <div className="md:col-span-2 flex gap-4">
             <Link href="/contribute" className="w-full">

@@ -4,8 +4,6 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { Toaster } from 'sonner'
 import { ThemeProvider } from '@/components/theme-provider'
-import Navbar from '@/components/Navbar'
-import Sidebar from '@/components/Sidebar'
 import { useState, useEffect } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 

@@ -61,6 +61,7 @@ interface QuizState {
   questions: Question[];
   answers: Record<number, string[]>;
   results: QuizResult[] | null;
+  allowPartialMarking: boolean;
 }
 
 interface Option {
@@ -83,6 +84,7 @@ export default function QuestionView({ mode }: QuestionViewProps) {
     questions: [],
     answers: {},
     results: null,
+    allowPartialMarking: false,
   });
   const [showQuizDialog, setShowQuizDialog] = useState(false);
   const [showResultsDialog, setShowResultsDialog] = useState(false);
@@ -255,6 +257,7 @@ export default function QuestionView({ mode }: QuestionViewProps) {
       questions: selectedQuestions,
       answers: {},
       results: null,
+      allowPartialMarking: false,
     });
 
     // Dispatch quiz state change event
@@ -284,6 +287,7 @@ export default function QuestionView({ mode }: QuestionViewProps) {
       const timeSpent = startTime ? Math.floor((Date.now() - startTime) / 1000) : 0;
 
       const history = {
+        id: Date.now().toString(),
         date: new Date().toISOString(),
         topic: currentFile,
         totalQuestions: quizState.totalQuestions,
@@ -291,7 +295,7 @@ export default function QuestionView({ mode }: QuestionViewProps) {
         percentage,
         correctAnswers,
         partialAnswers,
-        timeSpent:quizState.totalQuestions*timePerQuestion-quizState.timeLeft,
+        timeSpent,
         results,
       };
 
@@ -323,15 +327,21 @@ export default function QuestionView({ mode }: QuestionViewProps) {
       const correctAnswers = Array.isArray(q.correctAns)
         ? q.correctAns
         : [q.correctAns];
+      
+      // Check if answers match exactly
       const isCorrect =
         userAnswers.length === correctAnswers.length &&
         userAnswers.every((a) => correctAnswers.includes(a));
-      const partialScore = Array.isArray(q.correctAns)
-        ? userAnswers.filter((a) => correctAnswers.includes(a)).length /
-          correctAnswers.length
-        : isCorrect
-        ? 1
-        : 0;
+      
+      let partialScore = 0;
+      if (isCorrect) {
+        partialScore = 1;
+      } else if (quizState.allowPartialMarking && Array.isArray(q.correctAns)) {
+        // Only calculate partial score if partial marking is enabled and question has multiple answers
+        const correctCount = userAnswers.filter((a) => correctAnswers.includes(a)).length;
+        partialScore = correctCount / correctAnswers.length;
+      }
+
       return {
         question: q,
         userAnswers,
@@ -479,6 +489,7 @@ export default function QuestionView({ mode }: QuestionViewProps) {
         description: "Text copied to clipboard",
       });
     } catch (err) {
+      console.log(err)
       toast({
         title: "Error",
         description: "Failed to copy text",
@@ -503,58 +514,57 @@ export default function QuestionView({ mode }: QuestionViewProps) {
     return options;
   };
 
-  const handleOptionSelect = (optionIndex: number) => {
-    if (!currentQuestion) return;
-    
-    const isMultipleChoice = Array.isArray(currentQuestion.correctAns) && currentQuestion.correctAns.length > 1;
-    const optionIndexStr = optionIndex.toString();
-    
-    if (mode === "modify") {
-      const currentAnswers = Array.isArray(currentQuestion.proposedAns) 
-        ? currentQuestion.proposedAns 
-        : [currentQuestion.proposedAns];
-
+  const handleOptionSelect = (optionKey: string) => {
+    if (mode === "quiz" && quizState.isActive) {
+      const answers = quizState.answers[currentQuestionIndex] || [];
       let newAnswers: string[];
-      if (isMultipleChoice) {
-        // Toggle the selected option
-        newAnswers = currentAnswers.includes(optionIndexStr)
-          ? currentAnswers.filter(ans => ans !== optionIndexStr)
-          : [...currentAnswers, optionIndexStr].sort();
+
+      // Check if the question has multiple correct answers
+      const hasMultipleAnswers = Array.isArray(currentQuestion.correctAns) && currentQuestion.correctAns.length > 1;
+
+      if (hasMultipleAnswers) {
+        // Toggle the answer for multiple choice
+        newAnswers = answers.includes(optionKey)
+          ? answers.filter(a => a !== optionKey)
+          : [...answers, optionKey];
       } else {
-        // Single choice - replace the answer
-        newAnswers = [optionIndexStr];
+        // Replace the answer for single choice
+        newAnswers = [optionKey];
       }
 
-      setQuestions(prev => prev.map((q, i) => 
-        i === currentQuestionIndex
-          ? { ...q, proposedAns: newAnswers.length === 1 ? newAnswers[0] : newAnswers }
-          : q
-      ));
-
-      // Save after updating
-      saveQuestions();
-    } else {
-      // Quiz mode
-      const currentAnswers = Array.isArray(currentQuestion.quizAns) 
-        ? currentQuestion.quizAns 
-        : currentQuestion.quizAns ? [currentQuestion.quizAns] : [];
-
-      let newAnswers: string[];
-      if (isMultipleChoice) {
-        // Toggle the selected option
-        newAnswers = currentAnswers.includes(optionIndexStr)
-          ? currentAnswers.filter(ans => ans !== optionIndexStr)
-          : [...currentAnswers, optionIndexStr].sort();
+      // Update quiz state with new answers
+      setQuizState(prev => ({
+        ...prev,
+        answers: {
+          ...prev.answers,
+          [currentQuestionIndex]: newAnswers
+        }
+      }));
+    } else if (mode === "modify") {
+      // In modify mode, use the isMultiSelect state
+      if (isMultiSelect) {
+        setSelectedAnswers(prev =>
+          prev.includes(optionKey)
+            ? prev.filter(a => a !== optionKey)
+            : [...prev, optionKey]
+        );
       } else {
-        // Single choice - replace the answer
-        newAnswers = [optionIndexStr];
+        setSelectedAnswers([optionKey]);
       }
-
-      setQuestions(prev => prev.map((q, i) => 
-        i === currentQuestionIndex
-          ? { ...q, quizAns: newAnswers.length === 1 ? newAnswers[0] : newAnswers }
-          : q
-      ));
+      
+      // Save immediately in modify mode
+      const updatedQuestions = [...questions];
+      const currentAnswers = isMultiSelect 
+        ? (selectedAnswers.includes(optionKey) 
+          ? selectedAnswers.filter(a => a !== optionKey)
+          : [...selectedAnswers, optionKey])
+        : [optionKey];
+      
+      updatedQuestions[currentQuestionIndex] = {
+        ...currentQuestion,
+        [answerType]: currentAnswers,
+      };
+      saveQuestions(updatedQuestions);
     }
   };
 
@@ -750,7 +760,7 @@ export default function QuestionView({ mode }: QuestionViewProps) {
                     <div
                       key={option.key}
                       className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 p-2 rounded"
-                      onClick={() => handleAnswerChange(option.text)}
+                      onClick={() => handleOptionSelect(option.text)}
                     >
                       <RadioGroupItem value={option.text} id={option.key} />
                       <Label htmlFor={option.key} className="cursor-pointer flex-1">
@@ -883,7 +893,7 @@ export default function QuestionView({ mode }: QuestionViewProps) {
           <DialogHeader>
             <DialogTitle>Start Quiz</DialogTitle>
             <DialogDescription>
-              Choose the number of questions for your quiz
+              Configure your quiz settings
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">
@@ -902,6 +912,19 @@ export default function QuestionView({ mode }: QuestionViewProps) {
                   }))
                 }
                 className="w-20 p-2 border rounded"
+              />
+            </div>
+            <div className="flex items-center gap-4">
+              <Label htmlFor="partialMarking">Allow Partial Marking:</Label>
+              <Switch
+                id="partialMarking"
+                checked={quizState.allowPartialMarking}
+                onCheckedChange={(checked) =>
+                  setQuizState((prev) => ({
+                    ...prev,
+                    allowPartialMarking: checked,
+                  }))
+                }
               />
             </div>
           </div>

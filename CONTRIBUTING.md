@@ -12,7 +12,6 @@ Before you begin, ensure you have the following installed on your system:
 3. Verify installation by opening a terminal and running:
    ```bash
    node --version
-   npm --version
    ```
 
 ### 2. Git
@@ -31,22 +30,18 @@ Before you begin, ensure you have the following installed on your system:
 
 ## Setting Up the Project
 
-1. Fork the repository:
-   - Visit [https://github.com/rahulvijay5/quizer](https://github.com/rahulvijay5/quizer)
-   - Click the "Fork" button in the top-right corner
-
-2. Clone your fork:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/quizer.git
+   git clone https://github.com/rahulvijay5/quizer.git
    cd quizer
    ```
 
-3. Install dependencies:
+2. Install dependencies:
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    ```
 
-4. Start the development server:
+3. Start the development server:
    ```bash
    npm run dev
    ```

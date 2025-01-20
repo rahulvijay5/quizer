@@ -1,0 +1,29 @@
+I am going to provide you some of the questions and answer, and you need to arrange each one of them into a json array,
+whoose format follows this:
+[
+{
+    "Question": "Question",
+    "opt1": "Option 1",
+    "opt2": "Option 2",
+    "opt3": "Option 3",
+    "opt4": "Option 4",
+    "opt5": "Option 5",
+    "correctAns": "Correct Answer",
+    "resource": "",
+    "proposedAns": ""
+},
+{
+    "Question": "Question",
+    "opt1": "Option 1",
+    "opt2": "Option 2",
+    "opt3": "Option 3",
+    "opt4": "Option 4",
+    "opt5": "Option 5",
+    "correctAns": "Correct Answer",
+    "resource": "",
+    "proposedAns": ""
+},
+...
+]
+
+for now keep, proposedAns as empty string, for that question in correctAns add all of that options which are correct, add their values in correctAns array.

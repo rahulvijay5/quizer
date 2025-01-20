@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from "@/components/ui/button"
-import { MenuIcon, GithubIcon, UserCircle2Icon, InfoIcon } from "lucide-react"
+import { MenuIcon, GithubIcon, UserCircle2Icon, InfoIcon, PencilIcon } from "lucide-react"
 import Link from "next/link"
 import { useTheme } from "next-themes"
 import {
@@ -18,6 +18,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import ModeToggle from "./ModeToggle"
+import { Pencil } from 'lucide-react'
 
 interface NavbarProps {
   toggleSidebar: () => void;
@@ -63,6 +64,21 @@ export default function Navbar({ toggleSidebar }: NavbarProps) {
               </TooltipTrigger>
               <TooltipContent>
                 <p>View Quiz History</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link href="/notes">
+                  <Button variant="ghost" size="icon">
+                    <Pencil className="h-5 w-5" />
+                  </Button>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Your Notes</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>

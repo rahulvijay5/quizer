@@ -31,6 +31,7 @@ interface QuizResult {
   partialScore: number;
 }
 
+
 interface QuizHistory {
   date: string;
   topic: string;
@@ -53,9 +54,10 @@ export default function HistoryPage() {
         const response = await fetch('/api/quiz-history')
         if (!response.ok) throw new Error('Failed to load history')
         const data = await response.json()
-        setHistory(data)
+        setHistory(Array.isArray(data) ? data : [])
       } catch (error) {
         console.error('Error loading history:', error)
+        setHistory([])
       } finally {
         setLoading(false)
       }
@@ -74,6 +76,17 @@ export default function HistoryPage() {
   }
 
   const calculateSummary = () => {
+    if (!Array.isArray(history) || history.length === 0) {
+      return {
+        totalQuizzes: 0,
+        totalQuestions: 0,
+        totalCorrect: 0,
+        totalPartial: 0,
+        totalTimeSpent: 0,
+        averageScore: 0
+      }
+    }
+
     const totalQuizzes = history.length
     const totalQuestions = history.reduce((acc, entry) => acc + entry.totalQuestions, 0)
     const totalCorrect = history.reduce((acc, entry) => acc + entry.correctAnswers, 0)

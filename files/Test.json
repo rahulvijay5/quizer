@@ -11,12 +11,15 @@
       "XString",
       "Float"
     ],
-    "resource": "help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
+    "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": [
-      "XString",
-      "Float"
+      null
     ],
-    "isDoubt": false
+    "sourceTopic": "files/DataTypesQuestions.json",
+    "quizAns": [
+      "DECFLOAT34",
+      "String"
+    ]
   },
   {
     "Question": "What is the internal date format in SAP?",
@@ -24,14 +27,12 @@
     "opt2": "DDMMYYYY",
     "opt3": "MMDDYYYY",
     "opt4": "YYYYDDMM",
-    "correctAns": [
-      "YYYYMMDD"
-    ],
+    "correctAns": "YYYYMMDD",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": [
-      "YYYYMMDD",
-      "DDMMYYYY"
+      null
     ],
+    "sourceTopic": "files/DataTypesQuestions.json",
     "quizAns": [
       "YYYYMMDD"
     ]
@@ -42,18 +43,14 @@
     "opt2": "A file is logically deleted",
     "opt3": "Both A and B",
     "opt4": "None of the above",
-    "correctAns": [
-      "A file is physically deleted"
-    ],
+    "correctAns": "A file is physically deleted",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": [
-      "A file is physically deleted",
-      "A file is logically deleted",
       "Both A and B"
     ],
-    "isDoubt": true,
+    "sourceTopic": "files/DataTypesQuestions.json",
     "quizAns": [
-      "Both A and B"
+      "A file is logically deleted"
     ]
   },
   {
@@ -62,16 +59,14 @@
     "opt2": "N",
     "opt3": "C",
     "opt4": "D",
-    "correctAns": [
-      "C"
-    ],
+    "correctAns": "C",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": [
-      "C"
+      "N"
     ],
-    "isDoubt": true,
+    "sourceTopic": "files/DataTypesQuestions.json",
     "quizAns": [
-      "C"
+      "1"
     ]
   },
   {
@@ -84,6 +79,11 @@
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": [
       "MANDT"
+    ],
+    "sourceTopic": "files/DataTypesQuestions.json",
+    "isDoubt": true,
+    "quizAns": [
+      "MANDT"
     ]
   },
   {
@@ -92,7 +92,9 @@
     "opt2": "False",
     "correctAns": "True",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": [
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json",
+    "quizAns": [
       "True"
     ]
   },
@@ -104,9 +106,8 @@
     "opt4": "All of the above",
     "correctAns": "All of the above",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": [
-      "All of the above"
-    ],
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json",
     "quizAns": [
       "All of the above"
     ]
@@ -119,8 +120,9 @@
     "correctAns": "Data Element",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json",
     "quizAns": [
-      "Data Element"
+      "Domain"
     ]
   },
   {
@@ -130,8 +132,9 @@
     "correctAns": "Yes",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json",
     "quizAns": [
-      "No"
+      "Yes"
     ]
   },
   {
@@ -143,8 +146,9 @@
     "correctAns": "STRING",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json",
     "quizAns": [
-      "XSTRING"
+      "STRING"
     ]
   },
   {
@@ -155,7 +159,11 @@
     "opt4": "Technical Domain",
     "correctAns": "Semantic Domain",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": ""
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json",
+    "quizAns": [
+      "Semantic Domain"
+    ]
   },
   {
     "Question": "Which of the following ABAP standard types are incomplete?",
@@ -166,8 +174,9 @@
     "correctAns": "STRING",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json",
     "quizAns": [
-      "F"
+      "N"
     ]
   },
   {
@@ -178,7 +187,11 @@
     "opt4": "CSEQUENCE",
     "correctAns": "CLIKE",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
-    "proposedAns": ""
+    "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json",
+    "quizAns": [
+      "CLIKE"
+    ]
   },
   {
     "Question": "Which of the following Data Types are allowed in ABAP? (Choose two)",
@@ -192,7 +205,9 @@
     ],
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json",
     "quizAns": [
+      "DECFLOAT16",
       "DECFLOAT64",
       "DECFLOAT34"
     ]
@@ -205,8 +220,9 @@
     "correctAns": "DECIMAL",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json",
     "quizAns": [
-      "QUANTITY"
+      "CURRENCY"
     ]
   },
   {
@@ -218,8 +234,9 @@
     "correctAns": "T",
     "resource": "https://help.sap.com/viewer/7be1f4b7b0e14c4d8ba24c49ff0e3b9d/7.5.0/en-US/4c621342b122408ba7fcbab59c0fe70a.html",
     "proposedAns": "",
+    "sourceTopic": "files/DataTypesQuestions.json",
     "quizAns": [
-      "W"
+      "X"
     ]
   }
 ]

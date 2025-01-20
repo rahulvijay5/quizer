@@ -1,5 +1,7 @@
 # Quizer - SAP Quiz Platform
 
+![Quizer Home](./quizer_home.png)
+
 A community-driven quiz platform for SAP learning, built with Next.js and TypeScript. All data is stored locally, making it perfect for personal learning and offline use.
 
 ## Features
